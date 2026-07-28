@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mera Ilaka | Marketplace</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <span>
+    🛒 Cart:
+    <span id="cartCount">0</span>
+</span>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fas fa-city"></i>
+            <h2>Mera Ilaka</h2>
+        </div>
+
+        <ul>
+
+            <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+
+            <li><a href="announcements.html"><i class="fas fa-bullhorn"></i> Announcements</a></li>
+
+            <li class="active"><a href="marketplace.html"><i class="fas fa-store"></i> Marketplace</a></li>
+
+            <li><a href="businesses.html"><i class="fas fa-building"></i> Businesses</a></li>
+
+            <li><a href="services.html"><i class="fas fa-tools"></i> Services</a></li>
+
+            <li><a href="events.html"><i class="fas fa-calendar"></i> Events</a></li>
+
+            <li><a href="groups.html"><i class="fas fa-users"></i> Community Groups</a></li>
+
+            <li><a href="complaints.html"><i class="fas fa-file-alt"></i> Complaints</a></li>
+
+            <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+
+            <li><a href="../login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <h2>Marketplace</h2>
+
+            <div class="profile">
+                <i class="fas fa-bell"></i>
+                <span>Welcome, Vamshi</span>
+            </div>
+
+        </header>
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input type="text" placeholder="Search Products...">
+
+            <button>
+
+                <i class="fas fa-search"></i>
+
+            </button>
+
+        </div>
+
+        <!-- Category -->
+
+        <div class="market-actions">
+
+            <select>
+
+                <option>All Categories</option>
+                <option>Electronics</option>
+                <option>Furniture</option>
+                <option>Books</option>
+                <option>Clothing</option>
+                <option>Home Appliances</option>
+
+            </select>
+
+            <button class="create-btn">
+
+                <i class="fas fa-plus"></i>
+
+                Sell Product
+
+            </button>
+
+        </div>
+
+        <!-- Products -->
+
+        <section class="product-grid">
+
+            <!-- Product -->
+
+            <div class="product-card">
+
+                <img src="../images/laptop.jpg" alt="Laptop">
+
+                <h3>HP Laptop</h3>
+
+                <p>Good Condition | 8GB RAM | 512GB SSD</p>
+
+                <h2>₹35,000</h2>
+
+                <button>Buy Now</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <!-- Product -->
+
+            <div class="product-card">
+
+                <img src="../images/chair.jpg" alt="Chair">
+
+                <h3>Office Chair</h3>
+
+                <p>Comfortable ergonomic chair.</p>
+
+                <h2>₹4,500</h2>
+
+                <button>Buy Now</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <!-- Product -->
+
+            <div class="product-card">
+
+                <img src="../images/bicycle.jpg" alt="Bicycle">
+
+                <img src="https://via.placeholder.com/300x200" alt="Product">
+
+                <h3>Mountain Bicycle</h3>
+
+                <p>Excellent condition.</p>
+
+                <h2>₹8,000</h2>
+
+                <button>Buy Now</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <!-- Product -->
+
+            <div class="product-card">
+
+                <img src="../images/mobile.jpg" alt="Mobile">
+
+                <h3>Samsung Galaxy</h3>
+
+                <p>128GB Storage | Dual SIM</p>
+
+                <h2>₹18,000</h2>
+
+                <button>Buy Now</button>
+
+                <button>View Details</button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Products">
+
+    <button id="searchBtn">
+        Search
+    </button>
+
+</div>
+
+<div class="product-card">
+
+    <h3>Wireless Headphones</h3>
+
+    <p>$49.99</p>
+
+    <button class="buy-btn">
+        Buy Now
+    </button>
+
+    <button class="cart-btn">
+        Add to Cart
+    </button>
+
+</div>
+
+<!-- JavaScript -->
+
+<script src="../js/script.js"></script>
+
+<script src="../js/marketplace.js"></script>
+
+</body>
+
+</html>

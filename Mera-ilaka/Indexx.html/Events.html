@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mera Ilaka | Events</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fas fa-city"></i>
+            <h2>Mera Ilaka</h2>
+        </div>
+
+        <ul>
+
+            <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+
+            <li><a href="announcements.html"><i class="fas fa-bullhorn"></i> Announcements</a></li>
+
+            <li><a href="marketplace.html"><i class="fas fa-store"></i> Marketplace</a></li>
+
+            <li><a href="businesses.html"><i class="fas fa-building"></i> Businesses</a></li>
+
+            <li><a href="services.html"><i class="fas fa-tools"></i> Services</a></li>
+
+            <li class="active"><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+
+            <li><a href="groups.html"><i class="fas fa-users"></i> Community Groups</a></li>
+
+            <li><a href="complaints.html"><i class="fas fa-file-alt"></i> Complaints</a></li>
+
+            <li><a href="emergency.html"><i class="fas fa-triangle-exclamation"></i> Emergency</a></li>
+
+            <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+
+            <li><a href="../login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Topbar -->
+
+        <header class="topbar">
+
+            <h2>Community Events</h2>
+
+            <div class="profile">
+                <i class="fas fa-bell"></i>
+                <span>Welcome, Vamshi</span>
+            </div>
+
+        </header>
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input type="text" placeholder="Search events...">
+
+            <button>
+                <i class="fas fa-search"></i>
+            </button>
+
+        </div>
+
+        <!-- Filter -->
+
+        <div class="market-actions">
+
+            <select>
+
+                <option>All Events</option>
+                <option>Sports</option>
+                <option>Cultural</option>
+                <option>Health Camp</option>
+                <option>Community Meeting</option>
+                <option>Festival</option>
+
+            </select>
+
+            <button class="create-btn">
+
+                <i class="fas fa-plus"></i>
+
+                Create Event
+
+            </button>
+
+        </div>
+
+        <!-- Event Cards -->
+
+        <section class="product-grid">
+
+            <div class="product-card">
+
+                <img src="../images/yoga.jpg" alt="Yoga Camp">
+
+                <h3>Morning Yoga Camp</h3>
+
+                <p>📅 28 July 2026</p>
+
+                <p>📍 Community Park</p>
+
+                <button>Register</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="../images/blood.jpg" alt="Blood Donation">
+
+                <h3>Blood Donation Camp</h3>
+
+                <p>📅 30 July 2026</p>
+
+                <p>📍 Community Hall</p>
+
+                <button>Register</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="../images/sports.jpg" alt="Sports Tournament">
+
+                <h3>Sports Tournament</h3>
+
+                <p>📅 05 August 2026</p>
+
+                <p>📍 Sports Ground</p>
+
+                <button>Register</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="../images/independence.jpg" alt="Independence Day">
+
+                <h3>Independence Day Celebration</h3>
+
+                <p>📅 15 August 2026</p>
+
+                <p>📍 Main Ground</p>
+
+                <button>Register</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="https://via.placeholder.com/300x200" alt="Event">
+
+                <h3>Tree Plantation Drive</h3>
+
+                <p>📅 22 August 2026</p>
+
+                <p>📍 Green Park</p>
+
+                <button>Register</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="https://via.placeholder.com/300x200" alt="Event">
+
+                <h3>Monthly Community Meeting</h3>
+
+                <p>📅 30 August 2026</p>
+
+                <p>📍 Society Hall</p>
+
+                <button>Register</button>
+
+                <button>View Details</button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Events">
+
+    <button id="searchBtn">
+        Search
+    </button>
+
+</div>
+
+<div class="product-card">
+
+    <h3>Independence Day Celebration</h3>
+
+    <p>Date: 15 August 2026</p>
+
+    <button class="register-btn">
+        Register
+    </button>
+
+    <button class="view-btn">
+        View Details
+    </button>
+
+    <button class="reminder-btn">
+        Set Reminder
+    </button>
+
+</div>
+
+<span>
+    Registered Events:
+    <span id="eventCount">0</span>
+</span>
+
+<!-- JavaScript -->
+
+<script src="../js/script.js"></script>
+
+<script src="../js/events.js"></script>
+
+</body>
+
+</html>

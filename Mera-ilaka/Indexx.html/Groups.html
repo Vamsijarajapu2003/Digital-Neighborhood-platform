@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mera Ilaka | Community Groups</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fas fa-city"></i>
+            <h2>Mera Ilaka</h2>
+        </div>
+
+        <ul>
+
+            <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+
+            <li><a href="announcements.html"><i class="fas fa-bullhorn"></i> Announcements</a></li>
+
+            <li><a href="marketplace.html"><i class="fas fa-store"></i> Marketplace</a></li>
+
+            <li><a href="businesses.html"><i class="fas fa-building"></i> Businesses</a></li>
+
+            <li><a href="services.html"><i class="fas fa-tools"></i> Services</a></li>
+
+            <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+
+            <li class="active"><a href="groups.html"><i class="fas fa-users"></i> Community Groups</a></li>
+
+            <li><a href="complaints.html"><i class="fas fa-file-alt"></i> Complaints</a></li>
+
+            <li><a href="emergency.html"><i class="fas fa-triangle-exclamation"></i> Emergency</a></li>
+
+            <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+
+            <li><a href="../login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <h2>Community Groups</h2>
+
+            <div class="profile">
+                <i class="fas fa-bell"></i>
+                <span>Welcome, Vamshi</span>
+            </div>
+
+        </header>
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input type="text" placeholder="Search community groups...">
+
+            <button>
+                <i class="fas fa-search"></i>
+            </button>
+
+        </div>
+
+        <!-- Actions -->
+
+        <div class="market-actions">
+
+            <select>
+
+                <option>All Categories</option>
+                <option>Sports</option>
+                <option>Education</option>
+                <option>Health</option>
+                <option>Women</option>
+                <option>Senior Citizens</option>
+                <option>Environment</option>
+
+            </select>
+
+            <button class="create-btn">
+
+                <i class="fas fa-plus"></i>
+
+                Create Group
+
+            </button>
+
+        </div>
+
+        <!-- Group Cards -->
+
+        <section class="product-grid">
+
+            <div class="product-card">
+
+                <img src="../images/sports-group.jpg" alt="Sports Club">
+
+                <h3>Sports Club</h3>
+
+                <p>Football, Cricket & Indoor Games</p>
+
+                <p><strong>Members:</strong> 185</p>
+
+                <button>Join Group</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="../images/book-club.jpg" alt="Book Club">
+
+                <h3>Book Club</h3>
+
+                <p>Reading & Knowledge Sharing</p>
+
+                <p><strong>Members:</strong> 98</p>
+
+                <button>Join Group</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="../images/women-group.jpg" alt="Women's Forum">
+
+                <h3>Women's Forum</h3>
+
+                <p>Support & Community Activities</p>
+
+                <p><strong>Members:</strong> 132</p>
+
+                <button>Join Group</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="../images/environment.jpg" alt="Green Team">
+
+                <h3>Green Team</h3>
+
+                <p>Cleanliness & Tree Plantation</p>
+
+                <p><strong>Members:</strong> 74</p>
+
+                <button>Join Group</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="../images/senior-group.jpg" alt="Senior Citizens">
+
+                <h3>Senior Citizens Club</h3>
+
+                <p>Meetings & Health Awareness</p>
+
+                <p><strong>Members:</strong> 61</p>
+
+                <button>Join Group</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="../images/senior-group.jpg" alt="Senior Citizens">
+
+                <h3>Senior Citizens Club</h3>
+
+                <p>Meetings & Health Awareness</p>
+
+                <p><strong>Members:</strong> 61</p>
+
+                <button>Join Group</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <div class="product-card">
+
+               <img src="https://via.placeholder.com/300x200" alt="Community Group">
+
+                <h3>Students Club</h3>
+
+                <p>Learning, Coding & Career Guidance</p>
+
+                <p><strong>Members:</strong> 210</p>
+
+                <button>Join Group</button>
+
+                <button>View Details</button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Groups">
+
+    <button id="searchBtn">
+        Search
+    </button>
+
+</div>
+
+<div class="product-card">
+
+    <h3>Yoga Club</h3>
+
+    <p>Join our daily morning yoga sessions.</p>
+
+    <button class="join-btn">
+        Join Group
+    </button>
+
+    <button class="leave-btn">
+        Leave Group
+    </button>
+
+    <button class="view-btn">
+        View Details
+    </button>
+
+</div>
+
+<span>
+    Joined Groups:
+    <span id="groupCount">0</span>
+</span>
+
+<!-- JavaScript -->
+
+<script src="../js/script.js"></script>
+
+<script src="../js/groups.js"></script>
+
+</body>
+
+</html>

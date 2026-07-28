@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mera Ilaka | Services</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+    
+    <span>
+    Bookings:
+    <span id="bookingCount">0</span>
+</span>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fas fa-city"></i>
+            <h2>Mera Ilaka</h2>
+        </div>
+
+        <ul>
+
+            <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+
+            <li><a href="announcements.html"><i class="fas fa-bullhorn"></i> Announcements</a></li>
+
+            <li><a href="marketplace.html"><i class="fas fa-store"></i> Marketplace</a></li>
+
+            <li><a href="businesses.html"><i class="fas fa-building"></i> Businesses</a></li>
+
+            <li class="active"><a href="services.html"><i class="fas fa-tools"></i> Services</a></li>
+
+            <li><a href="events.html"><i class="fas fa-calendar"></i> Events</a></li>
+
+            <li><a href="groups.html"><i class="fas fa-users"></i> Community Groups</a></li>
+
+            <li><a href="complaints.html"><i class="fas fa-file-alt"></i> Complaints</a></li>
+
+            <li><a href="emergency.html"><i class="fas fa-triangle-exclamation"></i> Emergency</a></li>
+
+            <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+
+            <li><a href="../login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <h2>Service Providers</h2>
+
+            <div class="profile">
+                <i class="fas fa-bell"></i>
+                <span>Welcome, Vamshi</span>
+            </div>
+
+        </header>
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input type="text" placeholder="Search services...">
+
+            <button>
+                <i class="fas fa-search"></i>
+            </button>
+
+        </div>
+
+        <!-- Filter -->
+
+        <div class="market-actions">
+
+            <select>
+
+                <option>All Services</option>
+                <option>Electrician</option>
+                <option>Plumber</option>
+                <option>Carpenter</option>
+                <option>Painter</option>
+                <option>Tutor</option>
+                <option>Cleaner</option>
+
+            </select>
+
+            <button class="create-btn">
+
+                <i class="fas fa-user-plus"></i>
+
+                Become a Service Provider
+
+            </button>
+
+        </div>
+
+        <!-- Service Cards -->
+
+        <section class="product-grid">
+
+            <div class="product-card">
+
+                <img src="../images/electrician.jpg" alt="Electrician">
+
+                <img src="https://via.placeholder.com/300x200" alt="Service">
+
+                <h3>Raj Electric Works</h3>
+
+                <p>Electrical Repairs & Installation</p>
+
+                <h2>⭐ 4.8 / 5</h2>
+
+                <button>Book Service</button>
+
+                <button>View Profile</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="../images/plumber.jpg" alt="Plumber">
+
+                <h3>Sharma Plumbing</h3>
+
+                <p>Water Pipe & Bathroom Repairs</p>
+
+                <h2>⭐ 4.7 / 5</h2>
+
+                <button>Book Service</button>
+
+                <button>View Profile</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="../images/carpenter.jpg" alt="Carpenter">
+
+                <h3>Modern Carpentry</h3>
+
+                <p>Furniture Repair & Wood Work</p>
+
+                <h2>⭐ 4.9 / 5</h2>
+
+                <button>Book Service</button>
+
+                <button>View Profile</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="../images/tutor.jpg" alt="Tutor">
+
+                <h3>Priya Home Tuition</h3>
+
+                <p>Maths & Science Classes</p>
+
+                <h2>⭐ 4.8 / 5</h2>
+
+                <button>Book Service</button>
+
+                <button>View Profile</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="../images/painter.jpg" alt="Painter">
+
+                <h3>Royal Painters</h3>
+
+                <p>Interior & Exterior Painting</p>
+
+                <h2>⭐ 4.6 / 5</h2>
+
+                <button>Book Service</button>
+
+                <button>View Profile</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="../images/cleaner.jpg" alt="Cleaner">
+
+                <h3>Clean Home Services</h3>
+
+                <p>House Cleaning & Sanitization</p>
+
+                <h2>⭐ 4.9 / 5</h2>
+
+                <button>Book Service</button>
+
+                <button>View Profile</button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Services">
+
+    <button id="searchBtn">
+        Search
+    </button>
+
+</div>
+
+<div class="product-card">
+
+    <h3>Electrician</h3>
+
+    <p>Expert electrical repair and installation.</p>
+
+    <button class="book-btn">
+        Book Service
+    </button>
+
+    <button class="contact-btn">
+        Contact
+    </button>
+
+    <button class="rate-btn">
+        Rate Service
+    </button>
+
+</div>
+
+<!-- JavaScript -->
+
+<script src="../js/script.js"></script>
+
+<script src="../js/services.js"></script>
+
+</body>
+
+</html>

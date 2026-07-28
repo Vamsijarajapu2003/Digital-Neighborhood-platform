@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mera Ilaka | Complaints</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fas fa-city"></i>
+            <h2>Mera Ilaka</h2>
+        </div>
+
+        <ul>
+
+            <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+
+            <li><a href="announcements.html"><i class="fas fa-bullhorn"></i> Announcements</a></li>
+
+            <li><a href="marketplace.html"><i class="fas fa-store"></i> Marketplace</a></li>
+
+            <li><a href="businesses.html"><i class="fas fa-building"></i> Businesses</a></li>
+
+            <li><a href="services.html"><i class="fas fa-tools"></i> Services</a></li>
+
+            <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+
+            <li><a href="groups.html"><i class="fas fa-users"></i> Community Groups</a></li>
+
+            <li class="active"><a href="complaints.html"><i class="fas fa-file-circle-exclamation"></i> Complaints</a></li>
+
+            <li><a href="emergency.html"><i class="fas fa-triangle-exclamation"></i> Emergency</a></li>
+
+            <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+
+            <li><a href="../login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <h2>Complaints Management</h2>
+
+            <div class="profile">
+
+                <i class="fas fa-bell"></i>
+
+                <span>Welcome, Vamshi</span>
+
+            </div>
+
+        </header>
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input type="text" placeholder="Search complaints...">
+
+            <button>
+
+                <i class="fas fa-search"></i>
+
+            </button>
+
+        </div>
+
+        <!-- Actions -->
+
+        <div class="market-actions">
+
+            <select>
+
+                <option>All Categories</option>
+                <option>Water Supply</option>
+                <option>Road Damage</option>
+                <option>Street Lights</option>
+                <option>Garbage</option>
+                <option>Security</option>
+                <option>Electricity</option>
+
+            </select>
+
+            <button class="create-btn">
+
+                <i class="fas fa-plus"></i>
+
+                Raise Complaint
+
+            </button>
+
+        </div>
+
+        <!-- Complaint Cards -->
+
+        <section class="product-grid">
+
+            <div class="product-card">
+
+                <h3>💡 Street Light Not Working</h3>
+
+                <p><strong>Category:</strong> Electricity</p>
+
+                <p><strong>Location:</strong> Block A, Street 4</p>
+
+                <p><strong>Status:</strong>
+                    <span style="color:orange;">Pending</span>
+                </p>
+
+                <button>Track Status</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <h3>🚰 Water Leakage</h3>
+
+                <p><strong>Category:</strong> Water Supply</p>
+
+                <p><strong>Location:</strong> Main Road</p>
+
+                <p><strong>Status:</strong>
+                    <span style="color:green;">Resolved</span>
+                </p>
+
+                <button>Track Status</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <h3>🗑 Garbage Collection Delay</h3>
+
+                <p><strong>Category:</strong> Sanitation</p>
+
+                <p><strong>Location:</strong> Sector 2</p>
+
+                <p><strong>Status:</strong>
+                    <span style="color:red;">In Progress</span>
+                </p>
+
+                <button>Track Status</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <h3>🛣 Road Damage</h3>
+
+                <p><strong>Category:</strong> Roads</p>
+
+                <p><strong>Location:</strong> Bus Stop Road</p>
+
+                <p><strong>Status:</strong>
+                    <span style="color:orange;">Pending</span>
+                </p>
+
+                <button>Track Status</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <h3>🚓 Security Issue</h3>
+
+                <p><strong>Category:</strong> Security</p>
+
+                <p><strong>Location:</strong> Apartment Gate</p>
+
+                <p><strong>Status:</strong>
+                    <span style="color:green;">Resolved</span>
+                </p>
+
+                <button>Track Status</button>
+
+                <button>View Details</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <h3>🌳 Tree Blocking Road</h3>
+
+                <p><strong>Category:</strong> Public Safety</p>
+
+                <p><strong>Location:</strong> Park Entrance</p>
+
+                <p><strong>Status:</strong>
+                    <span style="color:red;">In Progress</span>
+                </p>
+
+                <button>Track Status</button>
+
+                <button>View Details</button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<div class="dashboard-section">
+
+    <textarea
+        id="complaintText"
+        placeholder="Enter your complaint here..."
+        rows="5">
+    </textarea>
+
+    <br><br>
+
+    <button id="submitComplaint">
+        Submit Complaint
+    </button>
+
+</div>
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Complaint">
+
+    <button id="searchBtn">
+        Search
+    </button>
+
+</div>
+
+<div class="product-card">
+
+    <h3>Water Leakage</h3>
+
+    <p>Leakage near Block A entrance.</p>
+
+    <button class="status-btn">
+        View Status
+    </button>
+
+    <button class="delete-btn">
+        Delete
+    </button>
+
+</div>
+
+<span>
+    Complaints:
+    <span id="complaintCount">0</span>
+</span>
+
+<!-- JavaScript -->
+
+<script src="../js/script.js"></script>
+
+<script src="../js/complaints.js"></script>
+
+</body>
+
+</html>

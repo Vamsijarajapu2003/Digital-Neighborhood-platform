@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mera Ilaka | Businesses</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fas fa-city"></i>
+            <h2>Mera Ilaka</h2>
+        </div>
+
+        <ul>
+
+            <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+
+            <li><a href="announcements.html"><i class="fas fa-bullhorn"></i> Announcements</a></li>
+
+            <li><a href="marketplace.html"><i class="fas fa-store"></i> Marketplace</a></li>
+
+            <li class="active"><a href="businesses.html"><i class="fas fa-building"></i> Businesses</a></li>
+
+            <li><a href="services.html"><i class="fas fa-tools"></i> Services</a></li>
+
+            <li><a href="events.html"><i class="fas fa-calendar"></i> Events</a></li>
+
+            <li><a href="groups.html"><i class="fas fa-users"></i> Community Groups</a></li>
+
+            <li><a href="complaints.html"><i class="fas fa-file-alt"></i> Complaints</a></li>
+
+            <li><a href="emergency.html"><i class="fas fa-triangle-exclamation"></i> Emergency</a></li>
+
+            <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+
+            <li><a href="../login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <h2>Local Businesses</h2>
+
+            <div class="profile">
+                <i class="fas fa-bell"></i>
+                <span>Welcome, Vamshi</span>
+            </div>
+
+        </header>
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input type="text" placeholder="Search businesses...">
+
+            <button>
+                <i class="fas fa-search"></i>
+            </button>
+
+        </div>
+
+        <!-- Actions -->
+
+        <div class="market-actions">
+
+            <select>
+
+                <option>All Categories</option>
+                <option>Restaurants</option>
+                <option>Medical</option>
+                <option>Education</option>
+                <option>Shopping</option>
+                <option>Fitness</option>
+
+            </select>
+
+            <button class="create-btn">
+
+                <i class="fas fa-plus"></i>
+
+                Register Business
+
+            </button>
+
+        </div>
+
+        <!-- Business Cards -->
+
+        <section class="product-grid">
+
+            <div class="product-card">
+
+                <img src="../images/restaurant.jpg" alt="Restaurant">
+
+                <img src="https://via.placeholder.com/300x200" alt="Business">
+
+                <h3>Green Leaf Restaurant</h3>
+
+                <p>Healthy Food • Home Delivery Available</p>
+
+                <h2>⭐ 4.8 / 5</h2>
+
+                <button>View Details</button>
+
+                <button>Contact</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="../images/pharmacy.jpg" alt="Pharmacy">
+
+                <h3>City Pharmacy</h3>
+
+                <p>Medicines • Health Care Products</p>
+
+                <h2>⭐ 4.7 / 5</h2>
+
+                <button>View Details</button>
+
+                <button>Contact</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="../images/grocery.jpg" alt="Grocery">
+
+                <h3>Fresh Mart</h3>
+
+                <p>Groceries • Daily Essentials</p>
+
+                <h2>⭐ 4.6 / 5</h2>
+
+                <button>View Details</button>
+
+                <button>Contact</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="../images/gym.jpg" alt="Gym">
+
+                <h3>Power Fitness Gym</h3>
+
+                <p>Fitness • Personal Training</p>
+
+                <h2>⭐ 4.9 / 5</h2>
+
+                <button>View Details</button>
+
+                <button>Contact</button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Businesses">
+
+    <button id="searchBtn">
+        Search
+    </button>
+
+</div>
+
+<div class="product-card">
+
+    <h3>ABC Grocery Store</h3>
+
+    <p>Fresh fruits, vegetables, and groceries.</p>
+
+    <button class="view-btn">
+        View Details
+    </button>
+
+    <button class="contact-btn">
+        Contact
+    </button>
+
+    <button class="favorite-btn">
+        Add to Favorites
+    </button>
+
+</div>
+
+<!-- JavaScript -->
+
+<script src="../js/script.js"></script>
+
+<script src="../js/businesses.js"></script>
+
+</body>
+
+</html>

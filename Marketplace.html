@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mera Ilaka | Admin - Marketplace</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../Style.css/style.css">
+    <link rel="stylesheet" href="../Style.css/dashboard.css">
+    <link rel="stylesheet" href="../Style.css/admin.css">
+    <link rel="stylesheet" href="../Style.css/cards.css">
+    <link rel="stylesheet" href="../Style.css/tables.css">
+    <link rel="stylesheet" href="../Style.css/forms.css">
+    <link rel="stylesheet" href="../Style.css/responsive.css">
+    <link rel="stylesheet" href="../Style.css/animations.css">
+
+
+</head>
+
+<body>
+
+    <!-- =========================================
+         ADMIN CONTAINER
+    ========================================== -->
+
+    <div class="dashboard-container">
+
+
+        <!-- =========================================
+             SIDEBAR
+        ========================================== -->
+
+        <aside class="sidebar">
+
+            <!-- LOGO -->
+
+            <div class="logo">
+
+                <i class="fas fa-city"></i>
+
+                Mera Ilaka
+
+            </div>
+
+
+            <!-- NAVIGATION -->
+
+            <ul>
+
+                <li>
+                    <a href="Dashboard.html">
+
+                        <i class="fas fa-chart-line"></i>
+
+                        Dashboard
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Users.html">
+
+                        <i class="fas fa-users"></i>
+
+                        Users
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Residents.html">
+
+                        <i class="fas fa-user-group"></i>
+
+                        Residents
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Businesses.html">
+
+                        <i class="fas fa-store"></i>
+
+                        Businesses
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Services.html">
+
+                        <i class="fas fa-handshake"></i>
+
+                        Services
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Announcements.html">
+
+                        <i class="fas fa-bullhorn"></i>
+
+                        Announcements
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Events.html">
+
+                        <i class="fas fa-calendar-days"></i>
+
+                        Events
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Complaints.html">
+
+                        <i class="fas fa-file-circle-exclamation"></i>
+
+                        Complaints
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Marketplace.html" class="active">
+
+                        <i class="fas fa-cart-shopping"></i>
+
+                        Marketplace
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Reports.html">
+
+                        <i class="fas fa-chart-pie"></i>
+
+                        Reports
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Settings.html">
+
+                        <i class="fas fa-gear"></i>
+
+                        Settings
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="../../Login.html" id="logout">
+
+                        <i class="fas fa-right-from-bracket"></i>
+
+                        Logout
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+
+
+        <!-- =========================================
+             MAIN CONTENT
+        ========================================== -->
+
+        <main class="main-content">
+
+
+            <!-- TOP BAR -->
+
+            <div class="topbar">
+
+                <div>
+
+                    <h1>
+
+                        <i class="fas fa-cart-shopping"></i>
+
+                        Marketplace Management
+
+                    </h1>
+
+                    <p>
+
+                        Manage products and listings posted by community members.
+
+                    </p>
+
+                </div>
+
+
+                <div class="user-info">
+
+                    <i class="fas fa-user-shield"></i>
+
+                    <div>
+
+                        <strong>
+                            Administrator
+                        </strong>
+
+                        <br>
+
+                        <small>
+                            Admin
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 STATISTICS CARDS
+            ========================================== -->
+
+            <div class="cards">
+
+
+                <!-- TOTAL PRODUCTS -->
+
+                <div class="stats-card">
+
+                    <div>
+
+                        <h3>
+                            Total Listings
+                        </h3>
+
+                        <div class="stats-number">
+                            325
+                        </div>
+
+                    </div>
+
+                    <div class="stats-icon">
+
+                        <i class="fas fa-boxes-stacked"></i>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ACTIVE -->
+
+                <div class="stats-card">
+
+                    <div>
+
+                        <h3>
+                            Active Listings
+                        </h3>
+
+                        <div class="stats-number">
+                            248
+                        </div>
+
+                    </div>
+
+                    <div class="stats-icon">
+
+                        <i class="fas fa-circle-check"></i>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PENDING -->
+
+                <div class="stats-card">
+
+                    <div>
+
+                        <h3>
+                            Pending Approval
+                        </h3>
+
+                        <div class="stats-number">
+                            52
+                        </div>
+
+                    </div>
+
+                    <div class="stats-icon">
+
+                        <i class="fas fa-clock"></i>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SOLD -->
+
+                <div class="stats-card">
+
+                    <div>
+
+                        <h3>
+                            Sold Items
+                        </h3>
+
+                        <div class="stats-number">
+                            25
+                        </div>
+
+                    </div>
+
+                    <div class="stats-icon">
+
+                        <i class="fas fa-bag-shopping"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 SEARCH AND FILTER
+            ========================================== -->
+
+            <div class="card">
+
+                <h2>
+
+                    <i class="fas fa-search"></i>
+
+                    Search & Filter Marketplace
+
+                </h2>
+
+
+                <div class="form-row">
+
+
+                    <!-- SEARCH -->
+
+                    <div class="form-group">
+
+                        <label for="productSearch">
+
+                            Search Product
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="productSearch"
+                            class="form-control"
+                            placeholder="Search product or seller...">
+
+                    </div>
+
+
+
+                    <!-- CATEGORY -->
+
+                    <div class="form-group">
+
+                        <label for="productCategory">
+
+                            Category
+
+                        </label>
+
+                        <select
+                            id="productCategory"
+                            class="form-control">
+
+                            <option value="all">
+                                All Categories
+                            </option>
+
+                            <option value="electronics">
+                                Electronics
+                            </option>
+
+                            <option value="furniture">
+                                Furniture
+                            </option>
+
+                            <option value="vehicles">
+                                Vehicles
+                            </option>
+
+                            <option value="books">
+                                Books
+                            </option>
+
+                            <option value="clothing">
+                                Clothing
+                            </option>
+
+                            <option value="home">
+                                Home & Kitchen
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- STATUS -->
+
+                    <div class="form-group">
+
+                        <label for="productStatus">
+
+                            Status
+
+                        </label>
+
+                        <select
+                            id="productStatus"
+                            class="form-control">
+
+                            <option value="all">
+                                All Status
+                            </option>
+
+                            <option value="active">
+                                Active
+                            </option>
+
+                            <option value="pending">
+                                Pending
+                            </option>
+
+                            <option value="sold">
+                                Sold
+                            </option>
+
+                            <option value="removed">
+                                Removed
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 MARKETPLACE DIRECTORY
+            ========================================== -->
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <h2>
+
+                        <i class="fas fa-shop"></i>
+
+                        Marketplace Directory
+
+                    </h2>
+
+
+                    <button
+                        class="form-btn"
+                        id="addProductButton">
+
+                        <i class="fas fa-plus"></i>
+
+                        Add Product
+
+                    </button>
+
+                </div>
+
+
+                <p>
+
+                    Review, approve and manage products
+                    listed by local residents.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 PRODUCTS TABLE
+            ========================================== -->
+
+            <div class="card">
+
+                <h2>
+
+                    <i class="fas fa-box-open"></i>
+
+                    Marketplace Listings
+
+                </h2>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    ID
+                                </th>
+
+                                <th>
+                                    Product
+                                </th>
+
+                                <th>
+                                    Seller
+                                </th>
+
+                                <th>
+                                    Category
+                                </th>
+
+                                <th>
+                                    Price
+                                </th>
+
+                                <th>
+                                    Location
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Actions
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="marketplaceTable">
+
+
+                            <!-- =================================
+                                 PRODUCT 1
+                            ================================== -->
+
+                            <tr class="search-item">
+
+                                <td>
+                                    P001
+                                </td>
+
+                                <td>
+
+                                    <strong>
+                                        Samsung Smart TV
+                                    </strong>
+
+                                </td>
+
+                                <td>
+                                    Vamsi Kumar
+                                </td>
+
+                                <td>
+                                    Electronics
+                                </td>
+
+                                <td>
+                                    ₹25,000
+                                </td>
+
+                                <td>
+                                    Madhapur
+                                </td>
+
+                                <td class="status-active">
+                                    Active
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewProduct(1)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editProduct(1)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteProduct(1)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- =================================
+                                 PRODUCT 2
+                            ================================== -->
+
+                            <tr class="search-item">
+
+                                <td>
+                                    P002
+                                </td>
+
+                                <td>
+
+                                    <strong>
+                                        Wooden Dining Table
+                                    </strong>
+
+                                </td>
+
+                                <td>
+                                    Rahul Reddy
+                                </td>
+
+                                <td>
+                                    Furniture
+                                </td>
+
+                                <td>
+                                    ₹12,500
+                                </td>
+
+                                <td>
+                                    Gachibowli
+                                </td>
+
+                                <td class="status-active">
+                                    Active
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewProduct(2)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editProduct(2)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteProduct(2)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- =================================
+                                 PRODUCT 3
+                            ================================== -->
+
+                            <tr class="search-item">
+
+                                <td>
+                                    P003
+                                </td>
+
+                                <td>
+
+                                    <strong>
+                                        Engineering Books
+                                    </strong>
+
+                                </td>
+
+                                <td>
+                                    Priya Sharma
+                                </td>
+
+                                <td>
+                                    Books
+                                </td>
+
+                                <td>
+                                    ₹2,000
+                                </td>
+
+                                <td>
+                                    Kondapur
+                                </td>
+
+                                <td class="status-pending">
+                                    Pending
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewProduct(3)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editProduct(3)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteProduct(3)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- =================================
+                                 PRODUCT 4
+                            ================================== -->
+
+                            <tr class="search-item">
+
+                                <td>
+                                    P004
+                                </td>
+
+                                <td>
+
+                                    <strong>
+                                        Honda Bike
+                                    </strong>
+
+                                </td>
+
+                                <td>
+                                    Suresh Kumar
+                                </td>
+
+                                <td>
+                                    Vehicles
+                                </td>
+
+                                <td>
+                                    ₹75,000
+                                </td>
+
+                                <td>
+                                    Kukatpally
+                                </td>
+
+                                <td class="status-active">
+                                    Active
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewProduct(4)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editProduct(4)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteProduct(4)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- =================================
+                                 PRODUCT 5
+                            ================================== -->
+
+                            <tr class="search-item">
+
+                                <td>
+                                    P005
+                                </td>
+
+                                <td>
+
+                                    <strong>
+                                        Office Chair
+                                    </strong>
+
+                                </td>
+
+                                <td>
+                                    Arjun Kumar
+                                </td>
+
+                                <td>
+                                    Furniture
+                                </td>
+
+                                <td>
+                                    ₹4,500
+                                </td>
+
+                                <td>
+                                    Miyapur
+                                </td>
+
+                                <td class="status-active">
+                                    Sold
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewProduct(5)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editProduct(5)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteProduct(5)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 PAGINATION
+            ========================================== -->
+
+            <div class="pagination">
+
+                <button>
+
+                    <i class="fas fa-angle-left"></i>
+
+                </button>
+
+
+                <button class="active">
+                    1
+                </button>
+
+
+                <button>
+                    2
+                </button>
+
+
+                <button>
+                    3
+                </button>
+
+
+                <button>
+
+                    <i class="fas fa-angle-right"></i>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 FOOTER
+            ========================================== -->
+
+            <footer class="footer">
+
+                <p>
+
+                    © <span id="currentYear"></span>
+
+                    Mera Ilaka.
+
+                    All Rights Reserved.
+
+                </p>
+
+            </footer>
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT FILES
+         Keep JavaScript at the bottom
+    ========================================== -->
+
+    <script src="../Script.js/script.js"></script>
+
+    <script src="../Script.js/Validation.js"></script>
+
+    <script src="../Script.js/Admin.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mera Ilaka | Admin - Events</title>
+
+    <!-- ==============================
+         FONT AWESOME
+    =============================== -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- ==============================
+         CSS FILES
+    =============================== -->
+     <link rel="stylesheet" href="../Style.css/style.css">
+    <link rel="stylesheet" href="../Style.css/dashboard.css">
+    <link rel="stylesheet" href="../Style.css/admin.css">
+    <link rel="stylesheet" href="../Style.css/cards.css">
+    <link rel="stylesheet" href="../Style.css/tables.css">
+    <link rel="stylesheet" href="../Style.css/forms.css">
+    <link rel="stylesheet" href="../Style.css/responsive.css">
+    <link rel="stylesheet" href="../Style.css/animations.css">
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         ADMIN CONTAINER
+    ========================================== -->
+
+    <div class="dashboard-container">
+
+
+        <!-- =========================================
+             SIDEBAR
+        ========================================== -->
+
+        <aside class="sidebar">
+
+
+            <!-- LOGO -->
+
+            <div class="logo">
+
+                <i class="fas fa-city"></i>
+
+                Mera Ilaka
+
+            </div>
+
+
+            <!-- MENU -->
+
+            <ul>
+
+
+                <li>
+
+                    <a href="Dashboard.html">
+
+                        <i class="fas fa-chart-line"></i>
+
+                        Dashboard
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Users.html">
+
+                        <i class="fas fa-users"></i>
+
+                        Users
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Residents.html">
+
+                        <i class="fas fa-user-group"></i>
+
+                        Residents
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Businesses.html">
+
+                        <i class="fas fa-store"></i>
+
+                        Businesses
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Services.html">
+
+                        <i class="fas fa-handshake"></i>
+
+                        Services
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Announcements.html">
+
+                        <i class="fas fa-bullhorn"></i>
+
+                        Announcements
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Events.html" class="active">
+
+                        <i class="fas fa-calendar-days"></i>
+
+                        Events
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Complaints.html">
+
+                        <i class="fas fa-file-circle-exclamation"></i>
+
+                        Complaints
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Marketplace.html">
+
+                        <i class="fas fa-cart-shopping"></i>
+
+                        Marketplace
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Reports.html">
+
+                        <i class="fas fa-chart-pie"></i>
+
+                        Reports
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Settings.html">
+
+                        <i class="fas fa-gear"></i>
+
+                        Settings
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="../../Login.html" id="logout">
+
+                        <i class="fas fa-right-from-bracket"></i>
+
+                        Logout
+
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+
+        </aside>
+
+
+
+        <!-- =========================================
+             MAIN CONTENT
+        ========================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =====================================
+                 TOP BAR
+            ====================================== -->
+
+            <div class="topbar">
+
+
+                <div>
+
+                    <h1>
+
+                        <i class="fas fa-calendar-days"></i>
+
+                        Events Management
+
+                    </h1>
+
+
+                    <p>
+
+                        Create, manage and monitor community events
+
+                    </p>
+
+                </div>
+
+
+                <div class="user-info">
+
+                    <i class="fas fa-user-shield"></i>
+
+
+                    <div>
+
+                        <strong>
+
+                            Administrator
+
+                        </strong>
+
+
+                        <br>
+
+
+                        <small>
+
+                            Admin
+
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =========================================
+                 STATISTICS CARDS
+            ========================================== -->
+
+            <div class="cards">
+
+
+                <!-- TOTAL EVENTS -->
+
+                <div class="stats-card">
+
+
+                    <div>
+
+                        <h3>
+
+                            Total Events
+
+                        </h3>
+
+
+                        <div class="stats-number">
+
+                            86
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stats-icon">
+
+                        <i class="fas fa-calendar"></i>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- UPCOMING EVENTS -->
+
+                <div class="stats-card">
+
+
+                    <div>
+
+                        <h3>
+
+                            Upcoming Events
+
+                        </h3>
+
+
+                        <div class="stats-number">
+
+                            32
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stats-icon">
+
+                        <i class="fas fa-calendar-check"></i>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- COMPLETED EVENTS -->
+
+                <div class="stats-card">
+
+
+                    <div>
+
+                        <h3>
+
+                            Completed Events
+
+                        </h3>
+
+
+                        <div class="stats-number">
+
+                            48
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stats-icon">
+
+                        <i class="fas fa-circle-check"></i>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- PENDING EVENTS -->
+
+                <div class="stats-card">
+
+
+                    <div>
+
+                        <h3>
+
+                            Pending Approval
+
+                        </h3>
+
+
+                        <div class="stats-number">
+
+                            6
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stats-icon">
+
+                        <i class="fas fa-clock"></i>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =========================================
+                 SEARCH AND FILTER
+            ========================================== -->
+
+            <div class="card">
+
+
+                <h2>
+
+                    <i class="fas fa-search"></i>
+
+                    Search & Filter Events
+
+                </h2>
+
+
+                <div class="form-row">
+
+
+                    <!-- SEARCH -->
+
+                    <div class="form-group">
+
+
+                        <label for="eventSearch">
+
+                            Search Event
+
+                        </label>
+
+
+                        <input
+                            type="text"
+                            id="eventSearch"
+                            class="form-control"
+                            placeholder="Search by event name or organizer...">
+
+
+                    </div>
+
+
+
+                    <!-- CATEGORY -->
+
+                    <div class="form-group">
+
+
+                        <label for="eventCategory">
+
+                            Category
+
+                        </label>
+
+
+                        <select
+                            id="eventCategory"
+                            class="form-control">
+
+
+                            <option value="all">
+
+                                All Categories
+
+                            </option>
+
+
+                            <option value="community">
+
+                                Community
+
+                            </option>
+
+
+                            <option value="sports">
+
+                                Sports
+
+                            </option>
+
+
+                            <option value="education">
+
+                                Education
+
+                            </option>
+
+
+                            <option value="cultural">
+
+                                Cultural
+
+                            </option>
+
+
+                            <option value="health">
+
+                                Health
+
+                            </option>
+
+
+                            <option value="business">
+
+                                Business
+
+                            </option>
+
+
+                            <option value="other">
+
+                                Other
+
+                            </option>
+
+
+                        </select>
+
+
+                    </div>
+
+
+
+                    <!-- STATUS -->
+
+                    <div class="form-group">
+
+
+                        <label for="eventStatus">
+
+                            Status
+
+                        </label>
+
+
+                        <select
+                            id="eventStatus"
+                            class="form-control">
+
+
+                            <option value="all">
+
+                                All Status
+
+                            </option>
+
+
+                            <option value="upcoming">
+
+                                Upcoming
+
+                            </option>
+
+
+                            <option value="completed">
+
+                                Completed
+
+                            </option>
+
+
+                            <option value="pending">
+
+                                Pending
+
+                            </option>
+
+
+                            <option value="cancelled">
+
+                                Cancelled
+
+                            </option>
+
+
+                        </select>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =========================================
+                 EVENT DIRECTORY
+            ========================================== -->
+
+            <div class="card">
+
+
+                <div class="card-header">
+
+
+                    <h2>
+
+                        <i class="fas fa-calendar-plus"></i>
+
+                        Event Directory
+
+                    </h2>
+
+
+                    <button
+                        class="form-btn"
+                        id="addEventButton">
+
+
+                        <i class="fas fa-plus"></i>
+
+                        Add Event
+
+
+                    </button>
+
+
+                </div>
+
+
+                <p>
+
+                    Manage community events, programs,
+                    meetings and activities.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- =========================================
+                 EVENTS TABLE
+            ========================================== -->
+
+            <div class="card">
+
+
+                <h2>
+
+                    <i class="fas fa-list"></i>
+
+                    Registered Events
+
+                </h2>
+
+
+                <div class="table-container">
+
+
+                    <table>
+
+
+                        <thead>
+
+
+                            <tr>
+
+
+                                <th>
+
+                                    ID
+
+                                </th>
+
+
+                                <th>
+
+                                    Event Name
+
+                                </th>
+
+
+                                <th>
+
+                                    Category
+
+                                </th>
+
+
+                                <th>
+
+                                    Organizer
+
+                                </th>
+
+
+                                <th>
+
+                                    Date
+
+                                </th>
+
+
+                                <th>
+
+                                    Location
+
+                                </th>
+
+
+                                <th>
+
+                                    Status
+
+                                </th>
+
+
+                                <th>
+
+                                    Actions
+
+                                </th>
+
+
+                            </tr>
+
+
+                        </thead>
+
+
+
+                        <tbody id="eventsTable">
+
+
+                            <!-- =================================
+                                 EVENT 1
+                            ================================== -->
+
+                            <tr class="search-item">
+
+
+                                <td>
+
+                                    E001
+
+                                </td>
+
+
+                                <td>
+
+                                    <strong>
+
+                                        Community Clean-Up Drive
+
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    Community
+
+                                </td>
+
+
+                                <td>
+
+                                    Residents Association
+
+                                </td>
+
+
+                                <td>
+
+                                    15 Aug 2026
+
+                                </td>
+
+
+                                <td>
+
+                                    Madhapur Park
+
+                                </td>
+
+
+                                <td class="status-active">
+
+                                    Upcoming
+
+                                </td>
+
+
+                                <td>
+
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewEvent(1)"
+                                        title="View">
+
+
+                                        <i class="fas fa-eye"></i>
+
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editEvent(1)"
+                                        title="Edit">
+
+
+                                        <i class="fas fa-edit"></i>
+
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteEvent(1)"
+                                        title="Delete">
+
+
+                                        <i class="fas fa-trash"></i>
+
+
+                                    </button>
+
+
+                                </td>
+
+
+                            </tr>
+
+
+
+                            <!-- =================================
+                                 EVENT 2
+                            ================================== -->
+
+                            <tr class="search-item">
+
+
+                                <td>
+
+                                    E002
+
+                                </td>
+
+
+                                <td>
+
+                                    <strong>
+
+                                        Independence Day Celebration
+
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    Cultural
+
+                                </td>
+
+
+                                <td>
+
+                                    Mera Ilaka Community
+
+                                </td>
+
+
+                                <td>
+
+                                    15 Aug 2026
+
+                                </td>
+
+
+                                <td>
+
+                                    Community Hall
+
+                                </td>
+
+
+                                <td class="status-active">
+
+                                    Upcoming
+
+                                </td>
+
+
+                                <td>
+
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewEvent(2)"
+                                        title="View">
+
+
+                                        <i class="fas fa-eye"></i>
+
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editEvent(2)"
+                                        title="Edit">
+
+
+                                        <i class="fas fa-edit"></i>
+
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteEvent(2)"
+                                        title="Delete">
+
+
+                                        <i class="fas fa-trash"></i>
+
+
+                                    </button>
+
+
+                                </td>
+
+
+                            </tr>
+
+
+
+                            <!-- =================================
+                                 EVENT 3
+                            ================================== -->
+
+                            <tr class="search-item">
+
+
+                                <td>
+
+                                    E003
+
+                                </td>
+
+
+                                <td>
+
+                                    <strong>
+
+                                        Free Health Checkup Camp
+
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    Health
+
+                                </td>
+
+
+                                <td>
+
+                                    City Care Hospital
+
+                                </td>
+
+
+                                <td>
+
+                                    22 Aug 2026
+
+                                </td>
+
+
+                                <td>
+
+                                    Gachibowli Community Center
+
+                                </td>
+
+
+                                <td class="status-pending">
+
+                                    Pending
+
+                                </td>
+
+
+                                <td>
+
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewEvent(3)"
+                                        title="View">
+
+
+                                        <i class="fas fa-eye"></i>
+
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editEvent(3)"
+                                        title="Edit">
+
+
+                                        <i class="fas fa-edit"></i>
+
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteEvent(3)"
+                                        title="Delete">
+
+
+                                        <i class="fas fa-trash"></i>
+
+
+                                    </button>
+
+
+                                </td>
+
+
+                            </tr>
+
+
+
+                            <!-- =================================
+                                 EVENT 4
+                            ================================== -->
+
+                            <tr class="search-item">
+
+
+                                <td>
+
+                                    E004
+
+                                </td>
+
+
+                                <td>
+
+                                    <strong>
+
+                                        Neighborhood Cricket Tournament
+
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    Sports
+
+                                </td>
+
+
+                                <td>
+
+                                    Youth Sports Club
+
+                                </td>
+
+
+                                <td>
+
+                                    30 Aug 2026
+
+                                </td>
+
+
+                                <td>
+
+                                    Local Sports Ground
+
+                                </td>
+
+
+                                <td class="status-active">
+
+                                    Upcoming
+
+                                </td>
+
+
+                                <td>
+
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewEvent(4)"
+                                        title="View">
+
+
+                                        <i class="fas fa-eye"></i>
+
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editEvent(4)"
+                                        title="Edit">
+
+
+                                        <i class="fas fa-edit"></i>
+
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteEvent(4)"
+                                        title="Delete">
+
+
+                                        <i class="fas fa-trash"></i>
+
+
+                                    </button>
+
+
+                                </td>
+
+
+                            </tr>
+
+
+
+                            <!-- =================================
+                                 EVENT 5
+                            ================================== -->
+
+                            <tr class="search-item">
+
+
+                                <td>
+
+                                    E005
+
+                                </td>
+
+
+                                <td>
+
+                                    <strong>
+
+                                        Digital Skills Workshop
+
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    Education
+
+                                </td>
+
+
+                                <td>
+
+                                    Community Learning Center
+
+                                </td>
+
+
+                                <td>
+
+                                    05 Sep 2026
+
+                                </td>
+
+
+                                <td>
+
+                                    Mera Ilaka Hall
+
+                                </td>
+
+
+                                <td class="status-active">
+
+                                    Upcoming
+
+                                </td>
+
+
+                                <td>
+
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewEvent(5)"
+                                        title="View">
+
+
+                                        <i class="fas fa-eye"></i>
+
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editEvent(5)"
+                                        title="Edit">
+
+
+                                        <i class="fas fa-edit"></i>
+
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteEvent(5)"
+                                        title="Delete">
+
+
+                                        <i class="fas fa-trash"></i>
+
+
+                                    </button>
+
+
+                                </td>
+
+
+                            </tr>
+
+
+                        </tbody>
+
+
+                    </table>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =========================================
+                 PAGINATION
+            ========================================== -->
+
+            <div class="pagination">
+
+
+                <button>
+
+                    <i class="fas fa-angle-left"></i>
+
+                </button>
+
+
+                <button class="active">
+
+                    1
+
+                </button>
+
+
+                <button>
+
+                    2
+
+                </button>
+
+
+                <button>
+
+                    3
+
+                </button>
+
+
+                <button>
+
+                    <i class="fas fa-angle-right"></i>
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =========================================
+                 FOOTER
+            ========================================== -->
+
+            <footer class="footer">
+
+
+                <p>
+
+                    © <span id="currentYear"></span>
+
+                    Mera Ilaka.
+
+                    All Rights Reserved.
+
+                </p>
+
+
+            </footer>
+
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT FILES
+         Keep these at the bottom
+    ========================================== -->
+    <script src="../Script.js/script.js"></script>
+
+    <script src="../Script.js/Validation.js"></script>
+
+    <script src="../Script.js/Admin.js"></script>
+    
+
+
+</body>
+
+</html>

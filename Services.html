@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mera Ilaka | Admin - Services</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../Style.css/style.css">
+    <link rel="stylesheet" href="../Style.css/dashboard.css">
+    <link rel="stylesheet" href="../Style.css/admin.css">
+    <link rel="stylesheet" href="../Style.css/cards.css">
+    <link rel="stylesheet" href="../Style.css/tables.css">
+    <link rel="stylesheet" href="../Style.css/forms.css">
+    <link rel="stylesheet" href="../Style.css/responsive.css">
+    <link rel="stylesheet" href="../Style.css/animations.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+         ADMIN CONTAINER
+    ========================================== -->
+
+    <div class="dashboard-container">
+
+
+        <!-- =====================================
+             SIDEBAR
+        ====================================== -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <i class="fas fa-city"></i>
+                Mera Ilaka
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="Dashboard.html">
+                        <i class="fas fa-chart-line"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Users.html">
+                        <i class="fas fa-users"></i>
+                        Users
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Residents.html">
+                        <i class="fas fa-user-group"></i>
+                        Residents
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Businesses.html">
+                        <i class="fas fa-store"></i>
+                        Businesses
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Services.html" class="active">
+                        <i class="fas fa-handshake"></i>
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Announcements.html">
+                        <i class="fas fa-bullhorn"></i>
+                        Announcements
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Events.html">
+                        <i class="fas fa-calendar"></i>
+                        Events
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Complaints.html">
+                        <i class="fas fa-file-circle-exclamation"></i>
+                        Complaints
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Marketplace.html">
+                        <i class="fas fa-cart-shopping"></i>
+                        Marketplace
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Reports.html">
+                        <i class="fas fa-chart-pie"></i>
+                        Reports
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Settings.html">
+                        <i class="fas fa-gear"></i>
+                        Settings
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../../Login.html" id="logout">
+                        <i class="fas fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+
+        <!-- =====================================
+             MAIN CONTENT
+        ====================================== -->
+
+        <main class="main-content">
+
+
+            <!-- TOP BAR -->
+
+            <div class="topbar">
+
+                <div>
+
+                    <h1>
+                        <i class="fas fa-handshake"></i>
+                        Services Management
+                    </h1>
+
+                    <p>
+                        Manage local service providers registered on Mera Ilaka
+                    </p>
+
+                </div>
+
+
+                <div class="user-info">
+
+                    <i class="fas fa-user-shield"></i>
+
+                    <div>
+
+                        <strong>Administrator</strong>
+
+                        <br>
+
+                        <small>Admin</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 STATISTICS CARDS
+            ================================== -->
+
+            <div class="cards">
+
+
+                <div class="stats-card">
+
+                    <div>
+
+                        <h3>Total Services</h3>
+
+                        <div class="stats-number">
+                            245
+                        </div>
+
+                    </div>
+
+                    <div class="stats-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="stats-card">
+
+                    <div>
+
+                        <h3>Verified Services</h3>
+
+                        <div class="stats-number">
+                            210
+                        </div>
+
+                    </div>
+
+                    <div class="stats-icon">
+                        <i class="fas fa-circle-check"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="stats-card">
+
+                    <div>
+
+                        <h3>Pending Approval</h3>
+
+                        <div class="stats-number">
+                            25
+                        </div>
+
+                    </div>
+
+                    <div class="stats-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="stats-card">
+
+                    <div>
+
+                        <h3>Inactive Services</h3>
+
+                        <div class="stats-number">
+                            10
+                        </div>
+
+                    </div>
+
+                    <div class="stats-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 SEARCH & FILTER
+            ================================== -->
+
+            <div class="card">
+
+                <h2>
+                    <i class="fas fa-search"></i>
+                    Search & Filter Services
+                </h2>
+
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="serviceSearch">
+                            Search Service
+                        </label>
+
+                        <input
+                            type="text"
+                            id="serviceSearch"
+                            class="form-control"
+                            placeholder="Search by service or provider...">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="serviceCategory">
+                            Category
+                        </label>
+
+                        <select
+                            id="serviceCategory"
+                            class="form-control">
+
+                            <option value="all">
+                                All Categories
+                            </option>
+
+                            <option value="plumbing">
+                                Plumbing
+                            </option>
+
+                            <option value="electrician">
+                                Electrician
+                            </option>
+
+                            <option value="cleaning">
+                                Cleaning
+                            </option>
+
+                            <option value="repair">
+                                Repair & Maintenance
+                            </option>
+
+                            <option value="delivery">
+                                Delivery
+                            </option>
+
+                            <option value="transport">
+                                Transport
+                            </option>
+
+                            <option value="education">
+                                Education
+                            </option>
+
+                            <option value="healthcare">
+                                Healthcare
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="serviceStatus">
+                            Status
+                        </label>
+
+                        <select
+                            id="serviceStatus"
+                            class="form-control">
+
+                            <option value="all">
+                                All Status
+                            </option>
+
+                            <option value="verified">
+                                Verified
+                            </option>
+
+                            <option value="pending">
+                                Pending
+                            </option>
+
+                            <option value="inactive">
+                                Inactive
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 SERVICE DIRECTORY
+            ================================== -->
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <h2>
+                        <i class="fas fa-list"></i>
+                        Service Directory
+                    </h2>
+
+                    <button
+                        class="form-btn"
+                        id="addServiceButton">
+
+                        <i class="fas fa-plus"></i>
+                        Add Service
+
+                    </button>
+
+                </div>
+
+                <p>
+                    View and manage service providers available
+                    within the local community.
+                </p>
+
+            </div>
+
+
+            <!-- =================================
+                 SERVICES TABLE
+            ================================== -->
+
+            <div class="card">
+
+                <h2>
+                    <i class="fas fa-briefcase"></i>
+                    Registered Services
+                </h2>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>ID</th>
+
+                                <th>Service</th>
+
+                                <th>Provider</th>
+
+                                <th>Category</th>
+
+                                <th>Phone</th>
+
+                                <th>Location</th>
+
+                                <th>Status</th>
+
+                                <th>Actions</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="servicesTable">
+
+
+                            <!-- SERVICE 1 -->
+
+                            <tr class="search-item">
+
+                                <td>S001</td>
+
+                                <td>
+                                    <strong>
+                                        Home Plumbing Services
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Ravi Kumar
+                                </td>
+
+                                <td>
+                                    Plumbing
+                                </td>
+
+                                <td>
+                                    9876543210
+                                </td>
+
+                                <td>
+                                    Madhapur
+                                </td>
+
+                                <td class="status-active">
+                                    Verified
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewService(1)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editService(1)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteService(1)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- SERVICE 2 -->
+
+                            <tr class="search-item">
+
+                                <td>S002</td>
+
+                                <td>
+                                    <strong>
+                                        Quick Electric Solutions
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Suresh Reddy
+                                </td>
+
+                                <td>
+                                    Electrician
+                                </td>
+
+                                <td>
+                                    9876501234
+                                </td>
+
+                                <td>
+                                    Gachibowli
+                                </td>
+
+                                <td class="status-active">
+                                    Verified
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewService(2)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editService(2)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteService(2)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- SERVICE 3 -->
+
+                            <tr class="search-item">
+
+                                <td>S003</td>
+
+                                <td>
+                                    <strong>
+                                        Sparkle Home Cleaning
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Priya Sharma
+                                </td>
+
+                                <td>
+                                    Cleaning
+                                </td>
+
+                                <td>
+                                    9876512345
+                                </td>
+
+                                <td>
+                                    Kondapur
+                                </td>
+
+                                <td class="status-pending">
+                                    Pending
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewService(3)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editService(3)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteService(3)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- SERVICE 4 -->
+
+                            <tr class="search-item">
+
+                                <td>S004</td>
+
+                                <td>
+                                    <strong>
+                                        City AC Repair
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Arjun Rao
+                                </td>
+
+                                <td>
+                                    Repair & Maintenance
+                                </td>
+
+                                <td>
+                                    9876523456
+                                </td>
+
+                                <td>
+                                    Kukatpally
+                                </td>
+
+                                <td class="status-active">
+                                    Verified
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewService(4)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editService(4)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteService(4)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- SERVICE 5 -->
+
+                            <tr class="search-item">
+
+                                <td>S005</td>
+
+                                <td>
+                                    <strong>
+                                        Local Delivery Service
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Naveen Kumar
+                                </td>
+
+                                <td>
+                                    Delivery
+                                </td>
+
+                                <td>
+                                    9876534567
+                                </td>
+
+                                <td>
+                                    Miyapur
+                                </td>
+
+                                <td class="status-inactive">
+                                    Inactive
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewService(5)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editService(5)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteService(5)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 PAGINATION
+            ================================== -->
+
+            <div class="pagination">
+
+                <button>
+                    <i class="fas fa-angle-left"></i>
+                </button>
+
+                <button class="active">1</button>
+
+                <button>2</button>
+
+                <button>3</button>
+
+                <button>
+                    <i class="fas fa-angle-right"></i>
+                </button>
+
+            </div>
+
+
+            <!-- =================================
+                 FOOTER
+            ================================== -->
+
+            <footer class="footer">
+
+                <p>
+
+                    © <span id="currentYear"></span>
+                    Mera Ilaka.
+                    All Rights Reserved.
+
+                </p>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <!-- =========================================
+         JAVASCRIPT FILES
+    ========================================== -->
+
+    <script src="../Script.js/script.js"></script>
+
+    <script src="../Script.js/Validation.js"></script>
+
+    <script src="../Script.js/Admin.js"></script>
+
+</body>
+
+</html>

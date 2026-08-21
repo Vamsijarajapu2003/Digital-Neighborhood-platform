@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mera Ilaka | Admin Settings</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="../Style.css/style.css">
+    <link rel="stylesheet" href="../Style.css/dashboard.css">
+    <link rel="stylesheet" href="../Style.css/admin.css">
+    <link rel="stylesheet" href="../Style.css/cards.css">
+    <link rel="stylesheet" href="../Style.css/tables.css">
+    <link rel="stylesheet" href="../Style.css/forms.css">
+    <link rel="stylesheet" href="../Style.css/responsive.css">
+    <link rel="stylesheet" href="../Style.css/animations.css">
+    
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         ADMIN CONTAINER
+    ========================================== -->
+
+    <div class="dashboard-container">
+
+
+        <!-- =========================================
+             SIDEBAR
+        ========================================== -->
+
+        <aside class="sidebar">
+
+            <!-- LOGO -->
+
+            <div class="logo">
+
+                <i class="fas fa-city"></i>
+
+                Mera Ilaka
+
+            </div>
+
+
+            <!-- NAVIGATION -->
+
+            <ul>
+
+                <li>
+
+                    <a href="Dashboard.html">
+
+                        <i class="fas fa-chart-line"></i>
+
+                        Dashboard
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Users.html">
+
+                        <i class="fas fa-users"></i>
+
+                        Users
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Residents.html">
+
+                        <i class="fas fa-user-group"></i>
+
+                        Residents
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Businesses.html">
+
+                        <i class="fas fa-store"></i>
+
+                        Businesses
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Services.html">
+
+                        <i class="fas fa-handshake"></i>
+
+                        Services
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Announcements.html">
+
+                        <i class="fas fa-bullhorn"></i>
+
+                        Announcements
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Events.html">
+
+                        <i class="fas fa-calendar-days"></i>
+
+                        Events
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Complaints.html">
+
+                        <i class="fas fa-file-circle-exclamation"></i>
+
+                        Complaints
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Marketplace.html">
+
+                        <i class="fas fa-cart-shopping"></i>
+
+                        Marketplace
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Reports.html">
+
+                        <i class="fas fa-chart-pie"></i>
+
+                        Reports
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="Settings.html" class="active">
+
+                        <i class="fas fa-gear"></i>
+
+                        Settings
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="../../Login.html" id="logout">
+
+                        <i class="fas fa-right-from-bracket"></i>
+
+                        Logout
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </aside>
+
+
+
+        <!-- =========================================
+             MAIN CONTENT
+        ========================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =========================================
+                 TOP BAR
+            ========================================== -->
+
+            <div class="topbar">
+
+                <div>
+
+                    <h1>
+
+                        <i class="fas fa-gear"></i>
+
+                        Admin Settings
+
+                    </h1>
+
+                    <p>
+
+                        Manage your Mera Ilaka platform settings.
+
+                    </p>
+
+                </div>
+
+
+                <div class="user-info">
+
+                    <i class="fas fa-user-shield"></i>
+
+                    <div>
+
+                        <strong>
+
+                            Administrator
+
+                        </strong>
+
+                        <br>
+
+                        <small>
+
+                            Admin
+
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 ADMIN PROFILE
+            ========================================== -->
+
+            <div class="card">
+
+                <h2>
+
+                    <i class="fas fa-user-shield"></i>
+
+                    Administrator Profile
+
+                </h2>
+
+
+                <div class="form-row">
+
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+
+                        <label for="adminName">
+
+                            Full Name
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="adminName"
+                            class="form-control"
+                            value="Administrator">
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="adminEmail">
+
+                            Email Address
+
+                        </label>
+
+                        <input
+                            type="email"
+                            id="adminEmail"
+                            class="form-control"
+                            value="admin@merailaka.com">
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="form-row">
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="adminPhone">
+
+                            Phone Number
+
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="adminPhone"
+                            class="form-control"
+                            value="+91 9876543210">
+
+                    </div>
+
+
+                    <!-- ROLE -->
+
+                    <div class="form-group">
+
+                        <label for="adminRole">
+
+                            Role
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="adminRole"
+                            class="form-control"
+                            value="Super Administrator"
+                            readonly>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="form-btn"
+                    id="updateProfileBtn">
+
+                    <i class="fas fa-save"></i>
+
+                    Save Profile
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 CHANGE PASSWORD
+            ========================================== -->
+
+            <div class="card">
+
+                <h2>
+
+                    <i class="fas fa-lock"></i>
+
+                    Change Password
+
+                </h2>
+
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="currentPassword">
+
+                            Current Password
+
+                        </label>
+
+                        <input
+                            type="password"
+                            id="currentPassword"
+                            class="form-control"
+                            placeholder="Enter current password">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="newPassword">
+
+                            New Password
+
+                        </label>
+
+                        <input
+                            type="password"
+                            id="newPassword"
+                            class="form-control"
+                            placeholder="Enter new password">
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+
+                        Confirm New Password
+
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        class="form-control"
+                        placeholder="Confirm new password">
+
+                </div>
+
+
+                <button
+                    class="form-btn"
+                    id="changePasswordBtn">
+
+                    <i class="fas fa-key"></i>
+
+                    Change Password
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 PLATFORM SETTINGS
+            ========================================== -->
+
+            <div class="card">
+
+                <h2>
+
+                    <i class="fas fa-sliders"></i>
+
+                    Platform Settings
+
+                </h2>
+
+
+                <!-- MAINTENANCE MODE -->
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <h3>
+
+                            Maintenance Mode
+
+                        </h3>
+
+                        <p>
+
+                            Temporarily disable access to the platform
+                            for maintenance.
+
+                        </p>
+
+                    </div>
+
+
+                    <label class="switch">
+
+                        <input
+                            type="checkbox"
+                            id="maintenanceMode">
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+
+                <hr>
+
+
+                <!-- USER REGISTRATION -->
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <h3>
+
+                            User Registration
+
+                        </h3>
+
+                        <p>
+
+                            Allow new residents to register on the platform.
+
+                        </p>
+
+                    </div>
+
+
+                    <label class="switch">
+
+                        <input
+                            type="checkbox"
+                            id="userRegistration"
+                            checked>
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+
+                <hr>
+
+
+                <!-- BUSINESS REGISTRATION -->
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <h3>
+
+                            Business Registration
+
+                        </h3>
+
+                        <p>
+
+                            Allow local businesses to create accounts.
+
+                        </p>
+
+                    </div>
+
+
+                    <label class="switch">
+
+                        <input
+                            type="checkbox"
+                            id="businessRegistration"
+                            checked>
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+
+                <hr>
+
+
+                <!-- MARKETPLACE -->
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <h3>
+
+                            Marketplace
+
+                        </h3>
+
+                        <p>
+
+                            Enable the community marketplace.
+
+                        </p>
+
+                    </div>
+
+
+                    <label class="switch">
+
+                        <input
+                            type="checkbox"
+                            id="marketplaceEnabled"
+                            checked>
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+
+                <hr>
+
+
+                <!-- COMPLAINTS -->
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <h3>
+
+                            Complaints System
+
+                        </h3>
+
+                        <p>
+
+                            Allow residents to submit complaints.
+
+                        </p>
+
+                    </div>
+
+
+                    <label class="switch">
+
+                        <input
+                            type="checkbox"
+                            id="complaintsEnabled"
+                            checked>
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+
+                <br>
+
+
+                <button
+                    class="form-btn"
+                    id="savePlatformSettings">
+
+                    <i class="fas fa-save"></i>
+
+                    Save Platform Settings
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 NOTIFICATION SETTINGS
+            ========================================== -->
+
+            <div class="card">
+
+                <h2>
+
+                    <i class="fas fa-bell"></i>
+
+                    Notification Settings
+
+                </h2>
+
+
+                <!-- EMAIL -->
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <h3>
+
+                            Email Notifications
+
+                        </h3>
+
+                        <p>
+
+                            Receive important platform notifications by email.
+
+                        </p>
+
+                    </div>
+
+
+                    <label class="switch">
+
+                        <input
+                            type="checkbox"
+                            id="emailNotifications"
+                            checked>
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+
+                <hr>
+
+
+                <!-- COMPLAINT NOTIFICATIONS -->
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <h3>
+
+                            Complaint Alerts
+
+                        </h3>
+
+                        <p>
+
+                            Receive notifications when new complaints are submitted.
+
+                        </p>
+
+                    </div>
+
+
+                    <label class="switch">
+
+                        <input
+                            type="checkbox"
+                            id="complaintNotifications"
+                            checked>
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+
+                <hr>
+
+
+                <!-- EVENT NOTIFICATIONS -->
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <h3>
+
+                            Event Notifications
+
+                        </h3>
+
+                        <p>
+
+                            Receive alerts about newly created community events.
+
+                        </p>
+
+                    </div>
+
+
+                    <label class="switch">
+
+                        <input
+                            type="checkbox"
+                            id="eventNotifications"
+                            checked>
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+
+                <hr>
+
+
+                <!-- MARKETPLACE NOTIFICATIONS -->
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <h3>
+
+                            Marketplace Alerts
+
+                        </h3>
+
+                        <p>
+
+                            Receive alerts about marketplace activities.
+
+                        </p>
+
+                    </div>
+
+
+                    <label class="switch">
+
+                        <input
+                            type="checkbox"
+                            id="marketplaceNotifications">
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+
+                <br>
+
+
+                <button
+                    class="form-btn"
+                    id="saveNotificationSettings">
+
+                    <i class="fas fa-save"></i>
+
+                    Save Notification Settings
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 SECURITY SETTINGS
+            ========================================== -->
+
+            <div class="card">
+
+                <h2>
+
+                    <i class="fas fa-shield-halved"></i>
+
+                    Security Settings
+
+                </h2>
+
+
+                <div class="form-group">
+
+                    <label for="sessionTimeout">
+
+                        Session Timeout
+
+                    </label>
+
+
+                    <select
+                        id="sessionTimeout"
+                        class="form-control">
+
+                        <option value="15">
+
+                            15 Minutes
+
+                        </option>
+
+                        <option value="30" selected>
+
+                            30 Minutes
+
+                        </option>
+
+                        <option value="60">
+
+                            1 Hour
+
+                        </option>
+
+                        <option value="120">
+
+                            2 Hours
+
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <h3>
+
+                            Two-Factor Authentication
+
+                        </h3>
+
+                        <p>
+
+                            Add an extra layer of security to the admin account.
+
+                        </p>
+
+                    </div>
+
+
+                    <label class="switch">
+
+                        <input
+                            type="checkbox"
+                            id="twoFactorAuth">
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+
+                <br>
+
+
+                <button
+                    class="form-btn"
+                    id="saveSecuritySettings">
+
+                    <i class="fas fa-shield"></i>
+
+                    Save Security Settings
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 DANGER ZONE
+            ========================================== -->
+
+            <div class="card">
+
+                <h2>
+
+                    <i class="fas fa-triangle-exclamation"></i>
+
+                    Danger Zone
+
+                </h2>
+
+
+                <p>
+
+                    These actions can affect the entire platform.
+                    Please use them carefully.
+
+                </p>
+
+
+                <br>
+
+
+                <button
+                    class="form-btn"
+                    id="clearCacheBtn">
+
+                    <i class="fas fa-trash-can"></i>
+
+                    Clear Cache
+
+                </button>
+
+
+                <button
+                    class="form-btn"
+                    id="resetSettingsBtn">
+
+                    <i class="fas fa-rotate-left"></i>
+
+                    Reset Settings
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 FOOTER
+            ========================================== -->
+
+            <footer class="footer">
+
+                <p>
+
+                    © <span id="currentYear"></span>
+
+                    Mera Ilaka.
+
+                    All Rights Reserved.
+
+                </p>
+
+            </footer>
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT FILES
+         KEEP AT BOTTOM
+    ========================================== -->
+<script src="../Script.js/script.js"></script>
+
+    <script src="../Script.js/Validation.js"></script>
+
+    <script src="../Script.js/Admin.js"></script>
+
+    <script src="../Script.js/Settings.js"></script>
+
+</body>
+
+</html>

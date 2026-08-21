@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mera Ilaka | Admin - Businesses</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS Files -->
+   <link rel="stylesheet" href="../Style.css/style.css">
+    <link rel="stylesheet" href="../Style.css/dashboard.css">
+    <link rel="stylesheet" href="../Style.css/admin.css">
+    <link rel="stylesheet" href="../Style.css/cards.css">
+    <link rel="stylesheet" href="../Style.css/tables.css">
+    <link rel="stylesheet" href="../Style.css/forms.css">
+    <link rel="stylesheet" href="../Style.css/responsive.css">
+    <link rel="stylesheet" href="../Style.css/animations.css">
+
+
+</head>
+
+<body>
+
+    <!-- =========================================
+         ADMIN CONTAINER
+    ========================================== -->
+
+    <div class="dashboard-container">
+
+
+        <!-- =====================================
+             SIDEBAR
+        ====================================== -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                <i class="fas fa-city"></i>
+
+                Mera Ilaka
+
+            </div>
+
+
+            <ul>
+
+                <li>
+                    <a href="Dashboard.html">
+                        <i class="fas fa-chart-line"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Users.html">
+                        <i class="fas fa-users"></i>
+                        Users
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Residents.html">
+                        <i class="fas fa-user-group"></i>
+                        Residents
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Businesses.html" class="active">
+                        <i class="fas fa-store"></i>
+                        Businesses
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Services.html">
+                        <i class="fas fa-handshake"></i>
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Announcements.html">
+                        <i class="fas fa-bullhorn"></i>
+                        Announcements
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Events.html">
+                        <i class="fas fa-calendar"></i>
+                        Events
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Complaints.html">
+                        <i class="fas fa-file-circle-exclamation"></i>
+                        Complaints
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Marketplace.html">
+                        <i class="fas fa-cart-shopping"></i>
+                        Marketplace
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Reports.html">
+                        <i class="fas fa-chart-pie"></i>
+                        Reports
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Settings.html">
+                        <i class="fas fa-gear"></i>
+                        Settings
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../../Login.html" id="logout">
+                        <i class="fas fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+
+        <!-- =====================================
+             MAIN CONTENT
+        ====================================== -->
+
+        <main class="main-content">
+
+
+            <!-- TOP BAR -->
+
+            <div class="topbar">
+
+                <div>
+
+                    <h1>
+
+                        <i class="fas fa-store"></i>
+
+                        Businesses Management
+
+                    </h1>
+
+                    <p>
+
+                        Manage local businesses registered on Mera Ilaka
+
+                    </p>
+
+                </div>
+
+
+                <div class="user-info">
+
+                    <i class="fas fa-user-shield"></i>
+
+                    <div>
+
+                        <strong>Administrator</strong>
+
+                        <br>
+
+                        <small>Admin</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 STATISTICS CARDS
+            ================================== -->
+
+            <div class="cards">
+
+
+                <div class="stats-card">
+
+                    <div>
+
+                        <h3>Total Businesses</h3>
+
+                        <div class="stats-number">
+                            320
+                        </div>
+
+                    </div>
+
+                    <div class="stats-icon">
+
+                        <i class="fas fa-store"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stats-card">
+
+                    <div>
+
+                        <h3>Verified</h3>
+
+                        <div class="stats-number">
+                            275
+                        </div>
+
+                    </div>
+
+                    <div class="stats-icon">
+
+                        <i class="fas fa-circle-check"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stats-card">
+
+                    <div>
+
+                        <h3>Pending</h3>
+
+                        <div class="stats-number">
+                            35
+                        </div>
+
+                    </div>
+
+                    <div class="stats-icon">
+
+                        <i class="fas fa-clock"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stats-card">
+
+                    <div>
+
+                        <h3>Inactive</h3>
+
+                        <div class="stats-number">
+                            10
+                        </div>
+
+                    </div>
+
+                    <div class="stats-icon">
+
+                        <i class="fas fa-store-slash"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 SEARCH AND FILTER
+            ================================== -->
+
+            <div class="card">
+
+                <h2>
+
+                    <i class="fas fa-search"></i>
+
+                    Search & Filter Businesses
+
+                </h2>
+
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="businessSearch">
+
+                            Search Business
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="businessSearch"
+                            class="form-control"
+                            placeholder="Search by business name or owner...">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="businessCategory">
+
+                            Category
+
+                        </label>
+
+                        <select
+                            id="businessCategory"
+                            class="form-control">
+
+                            <option value="all">
+                                All Categories
+                            </option>
+
+                            <option value="restaurant">
+                                Restaurant
+                            </option>
+
+                            <option value="grocery">
+                                Grocery
+                            </option>
+
+                            <option value="retail">
+                                Retail
+                            </option>
+
+                            <option value="education">
+                                Education
+                            </option>
+
+                            <option value="healthcare">
+                                Healthcare
+                            </option>
+
+                            <option value="technology">
+                                Technology
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="businessStatus">
+
+                            Status
+
+                        </label>
+
+                        <select
+                            id="businessStatus"
+                            class="form-control">
+
+                            <option value="all">
+                                All Status
+                            </option>
+
+                            <option value="verified">
+                                Verified
+                            </option>
+
+                            <option value="pending">
+                                Pending
+                            </option>
+
+                            <option value="inactive">
+                                Inactive
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 ADD BUSINESS BUTTON
+            ================================== -->
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <h2>
+
+                        <i class="fas fa-building"></i>
+
+                        Business Directory
+
+                    </h2>
+
+
+                    <button
+                        class="form-btn"
+                        id="addBusinessButton">
+
+                        <i class="fas fa-plus"></i>
+
+                        Add Business
+
+                    </button>
+
+                </div>
+
+
+                <p>
+
+                    View and manage all local businesses registered
+                    in the Mera Ilaka community.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================
+                 BUSINESSES TABLE
+            ================================== -->
+
+            <div class="card">
+
+                <h2>
+
+                    <i class="fas fa-list"></i>
+
+                    Registered Businesses
+
+                </h2>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>ID</th>
+
+                                <th>Business Name</th>
+
+                                <th>Owner</th>
+
+                                <th>Category</th>
+
+                                <th>Phone</th>
+
+                                <th>Location</th>
+
+                                <th>Status</th>
+
+                                <th>Actions</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="businessesTable">
+
+
+                            <!-- BUSINESS 1 -->
+
+                            <tr class="search-item">
+
+                                <td>B001</td>
+
+                                <td>
+
+                                    <strong>
+
+                                        Sri Lakshmi Supermarket
+
+                                    </strong>
+
+                                </td>
+
+                                <td>
+
+                                    Ramesh Kumar
+
+                                </td>
+
+                                <td>
+
+                                    Grocery
+
+                                </td>
+
+                                <td>
+
+                                    9876543210
+
+                                </td>
+
+                                <td>
+
+                                    Madhapur
+
+                                </td>
+
+                                <td class="status-active">
+
+                                    Verified
+
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewBusiness(1)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editBusiness(1)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteBusiness(1)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- BUSINESS 2 -->
+
+                            <tr class="search-item">
+
+                                <td>B002</td>
+
+                                <td>
+
+                                    <strong>
+
+                                        City Care Pharmacy
+
+                                    </strong>
+
+                                </td>
+
+                                <td>
+
+                                    Suresh Reddy
+
+                                </td>
+
+                                <td>
+
+                                    Healthcare
+
+                                </td>
+
+                                <td>
+
+                                    9876501234
+
+                                </td>
+
+                                <td>
+
+                                    Gachibowli
+
+                                </td>
+
+                                <td class="status-active">
+
+                                    Verified
+
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewBusiness(2)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editBusiness(2)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteBusiness(2)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- BUSINESS 3 -->
+
+                            <tr class="search-item">
+
+                                <td>B003</td>
+
+                                <td>
+
+                                    <strong>
+
+                                        Taste of Hyderabad
+
+                                    </strong>
+
+                                </td>
+
+                                <td>
+
+                                    Prakash Rao
+
+                                </td>
+
+                                <td>
+
+                                    Restaurant
+
+                                </td>
+
+                                <td>
+
+                                    9876512345
+
+                                </td>
+
+                                <td>
+
+                                    Kondapur
+
+                                </td>
+
+                                <td class="status-pending">
+
+                                    Pending
+
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewBusiness(3)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editBusiness(3)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteBusiness(3)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- BUSINESS 4 -->
+
+                            <tr class="search-item">
+
+                                <td>B004</td>
+
+                                <td>
+
+                                    <strong>
+
+                                        Bright Future Academy
+
+                                    </strong>
+
+                                </td>
+
+                                <td>
+
+                                    Anil Sharma
+
+                                </td>
+
+                                <td>
+
+                                    Education
+
+                                </td>
+
+                                <td>
+
+                                    9876523456
+
+                                </td>
+
+                                <td>
+
+                                    Kukatpally
+
+                                </td>
+
+                                <td class="status-active">
+
+                                    Verified
+
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewBusiness(4)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editBusiness(4)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteBusiness(4)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- BUSINESS 5 -->
+
+                            <tr class="search-item">
+
+                                <td>B005</td>
+
+                                <td>
+
+                                    <strong>
+
+                                        Tech Solutions
+
+                                    </strong>
+
+                                </td>
+
+                                <td>
+
+                                    Naveen Kumar
+
+                                </td>
+
+                                <td>
+
+                                    Technology
+
+                                </td>
+
+                                <td>
+
+                                    9876534567
+
+                                </td>
+
+                                <td>
+
+                                    Miyapur
+
+                                </td>
+
+                                <td class="status-inactive">
+
+                                    Inactive
+
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewBusiness(5)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editBusiness(5)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteBusiness(5)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 PAGINATION
+            ================================== -->
+
+            <div class="pagination">
+
+                <button>
+
+                    <i class="fas fa-angle-left"></i>
+
+                </button>
+
+                <button class="active">1</button>
+
+                <button>2</button>
+
+                <button>3</button>
+
+                <button>
+
+                    <i class="fas fa-angle-right"></i>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================
+                 FOOTER
+            ================================== -->
+
+            <footer class="footer">
+
+                <p>
+
+                    © <span id="currentYear"></span>
+
+                    Mera Ilaka.
+
+                    All Rights Reserved.
+
+                </p>
+
+            </footer>
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT FILES
+    ========================================== -->
+
+    
+    <script src="../Script.js/script.js"></script>
+
+    <script src="../Script.js/Validation.js"></script>
+
+    <script src="../Script.js/Admin.js"></script>
+
+</body>
+
+</html>

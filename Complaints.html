@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mera Ilaka | Admin - Complaints</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS Files -->
+   <link rel="stylesheet" href="../Style.css/style.css">
+    <link rel="stylesheet" href="../Style.css/dashboard.css">
+    <link rel="stylesheet" href="../Style.css/admin.css">
+    <link rel="stylesheet" href="../Style.css/cards.css">
+    <link rel="stylesheet" href="../Style.css/tables.css">
+    <link rel="stylesheet" href="../Style.css/forms.css">
+    <link rel="stylesheet" href="../Style.css/responsive.css">
+    <link rel="stylesheet" href="../Style.css/animations.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         ADMIN CONTAINER
+    ========================================== -->
+
+    <div class="dashboard-container">
+
+
+        <!-- =====================================
+             SIDEBAR
+        ====================================== -->
+
+        <aside class="sidebar">
+
+            <!-- LOGO -->
+
+            <div class="logo">
+
+                <i class="fas fa-city"></i>
+
+                Mera Ilaka
+
+            </div>
+
+
+            <!-- MENU -->
+
+            <ul>
+
+                <li>
+                    <a href="Dashboard.html">
+
+                        <i class="fas fa-chart-line"></i>
+
+                        Dashboard
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Users.html">
+
+                        <i class="fas fa-users"></i>
+
+                        Users
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Residents.html">
+
+                        <i class="fas fa-user-group"></i>
+
+                        Residents
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Businesses.html">
+
+                        <i class="fas fa-store"></i>
+
+                        Businesses
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Services.html">
+
+                        <i class="fas fa-handshake"></i>
+
+                        Services
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Announcements.html">
+
+                        <i class="fas fa-bullhorn"></i>
+
+                        Announcements
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Events.html">
+
+                        <i class="fas fa-calendar-days"></i>
+
+                        Events
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Complaints.html" class="active">
+
+                        <i class="fas fa-file-circle-exclamation"></i>
+
+                        Complaints
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Marketplace.html">
+
+                        <i class="fas fa-cart-shopping"></i>
+
+                        Marketplace
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Reports.html">
+
+                        <i class="fas fa-chart-pie"></i>
+
+                        Reports
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="Settings.html">
+
+                        <i class="fas fa-gear"></i>
+
+                        Settings
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="../../Login.html" id="logout">
+
+                        <i class="fas fa-right-from-bracket"></i>
+
+                        Logout
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+
+
+        <!-- =====================================
+             MAIN CONTENT
+        ====================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =================================
+                 TOP BAR
+            ================================== -->
+
+            <div class="topbar">
+
+                <div>
+
+                    <h1>
+
+                        <i class="fas fa-file-circle-exclamation"></i>
+
+                        Complaints Management
+
+                    </h1>
+
+                    <p>
+
+                        Manage and resolve complaints submitted
+                        by community residents.
+
+                    </p>
+
+                </div>
+
+
+                <div class="user-info">
+
+                    <i class="fas fa-user-shield"></i>
+
+                    <div>
+
+                        <strong>
+                            Administrator
+                        </strong>
+
+                        <br>
+
+                        <small>
+                            Admin
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 STATISTICS CARDS
+            ================================== -->
+
+            <div class="cards">
+
+
+                <!-- TOTAL -->
+
+                <div class="stats-card">
+
+                    <div>
+
+                        <h3>
+                            Total Complaints
+                        </h3>
+
+                        <div class="stats-number">
+                            156
+                        </div>
+
+                    </div>
+
+                    <div class="stats-icon">
+
+                        <i class="fas fa-file-lines"></i>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PENDING -->
+
+                <div class="stats-card">
+
+                    <div>
+
+                        <h3>
+                            Pending
+                        </h3>
+
+                        <div class="stats-number">
+                            42
+                        </div>
+
+                    </div>
+
+                    <div class="stats-icon">
+
+                        <i class="fas fa-clock"></i>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- IN PROGRESS -->
+
+                <div class="stats-card">
+
+                    <div>
+
+                        <h3>
+                            In Progress
+                        </h3>
+
+                        <div class="stats-number">
+                            28
+                        </div>
+
+                    </div>
+
+                    <div class="stats-icon">
+
+                        <i class="fas fa-spinner"></i>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- RESOLVED -->
+
+                <div class="stats-card">
+
+                    <div>
+
+                        <h3>
+                            Resolved
+                        </h3>
+
+                        <div class="stats-number">
+                            86
+                        </div>
+
+                    </div>
+
+                    <div class="stats-icon">
+
+                        <i class="fas fa-circle-check"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 SEARCH AND FILTER
+            ================================== -->
+
+            <div class="card">
+
+                <h2>
+
+                    <i class="fas fa-search"></i>
+
+                    Search & Filter Complaints
+
+                </h2>
+
+
+                <div class="form-row">
+
+
+                    <!-- SEARCH -->
+
+                    <div class="form-group">
+
+                        <label for="complaintSearch">
+
+                            Search Complaint
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="complaintSearch"
+                            class="form-control"
+                            placeholder="Search by complaint ID, resident or subject...">
+
+                    </div>
+
+
+
+                    <!-- CATEGORY -->
+
+                    <div class="form-group">
+
+                        <label for="complaintCategory">
+
+                            Category
+
+                        </label>
+
+                        <select
+                            id="complaintCategory"
+                            class="form-control">
+
+                            <option value="all">
+                                All Categories
+                            </option>
+
+                            <option value="water">
+                                Water Supply
+                            </option>
+
+                            <option value="electricity">
+                                Electricity
+                            </option>
+
+                            <option value="roads">
+                                Roads
+                            </option>
+
+                            <option value="garbage">
+                                Garbage
+                            </option>
+
+                            <option value="streetlight">
+                                Street Lights
+                            </option>
+
+                            <option value="security">
+                                Security
+                            </option>
+
+                            <option value="noise">
+                                Noise
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- STATUS -->
+
+                    <div class="form-group">
+
+                        <label for="complaintStatus">
+
+                            Status
+
+                        </label>
+
+                        <select
+                            id="complaintStatus"
+                            class="form-control">
+
+                            <option value="all">
+                                All Status
+                            </option>
+
+                            <option value="pending">
+                                Pending
+                            </option>
+
+                            <option value="progress">
+                                In Progress
+                            </option>
+
+                            <option value="resolved">
+                                Resolved
+                            </option>
+
+                            <option value="rejected">
+                                Rejected
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 COMPLAINT DIRECTORY
+            ================================== -->
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <h2>
+
+                        <i class="fas fa-list"></i>
+
+                        Complaint Directory
+
+                    </h2>
+
+
+                    <button
+                        class="form-btn"
+                        id="addComplaintButton">
+
+                        <i class="fas fa-plus"></i>
+
+                        Add Complaint
+
+                    </button>
+
+                </div>
+
+
+                <p>
+
+                    Review complaints, assign them to responsible
+                    departments and track their resolution.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================
+                 COMPLAINTS TABLE
+            ================================== -->
+
+            <div class="card">
+
+                <h2>
+
+                    <i class="fas fa-file-circle-exclamation"></i>
+
+                    Registered Complaints
+
+                </h2>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    ID
+                                </th>
+
+                                <th>
+                                    Resident
+                                </th>
+
+                                <th>
+                                    Subject
+                                </th>
+
+                                <th>
+                                    Category
+                                </th>
+
+                                <th>
+                                    Date
+                                </th>
+
+                                <th>
+                                    Location
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Actions
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="complaintsTable">
+
+
+                            <!-- =================================
+                                 COMPLAINT 1
+                            ================================== -->
+
+                            <tr class="search-item">
+
+                                <td>
+                                    C001
+                                </td>
+
+                                <td>
+                                    Vamsi Kumar
+                                </td>
+
+                                <td>
+                                    Water supply issue
+                                </td>
+
+                                <td>
+                                    Water Supply
+                                </td>
+
+                                <td>
+                                    08 Aug 2026
+                                </td>
+
+                                <td>
+                                    Madhapur
+                                </td>
+
+                                <td class="status-pending">
+                                    Pending
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewComplaint(1)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editComplaint(1)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteComplaint(1)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- =================================
+                                 COMPLAINT 2
+                            ================================== -->
+
+                            <tr class="search-item">
+
+                                <td>
+                                    C002
+                                </td>
+
+                                <td>
+                                    Rahul Reddy
+                                </td>
+
+                                <td>
+                                    Damaged street light
+                                </td>
+
+                                <td>
+                                    Street Lights
+                                </td>
+
+                                <td>
+                                    07 Aug 2026
+                                </td>
+
+                                <td>
+                                    Gachibowli
+                                </td>
+
+                                <td class="status-progress">
+                                    In Progress
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewComplaint(2)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editComplaint(2)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteComplaint(2)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- =================================
+                                 COMPLAINT 3
+                            ================================== -->
+
+                            <tr class="search-item">
+
+                                <td>
+                                    C003
+                                </td>
+
+                                <td>
+                                    Priya Sharma
+                                </td>
+
+                                <td>
+                                    Garbage collection delay
+                                </td>
+
+                                <td>
+                                    Garbage
+                                </td>
+
+                                <td>
+                                    06 Aug 2026
+                                </td>
+
+                                <td>
+                                    Kondapur
+                                </td>
+
+                                <td class="status-active">
+                                    Resolved
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewComplaint(3)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editComplaint(3)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteComplaint(3)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- =================================
+                                 COMPLAINT 4
+                            ================================== -->
+
+                            <tr class="search-item">
+
+                                <td>
+                                    C004
+                                </td>
+
+                                <td>
+                                    Sneha Reddy
+                                </td>
+
+                                <td>
+                                    Road maintenance required
+                                </td>
+
+                                <td>
+                                    Roads
+                                </td>
+
+                                <td>
+                                    05 Aug 2026
+                                </td>
+
+                                <td>
+                                    Kukatpally
+                                </td>
+
+                                <td class="status-progress">
+                                    In Progress
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewComplaint(4)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editComplaint(4)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteComplaint(4)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- =================================
+                                 COMPLAINT 5
+                            ================================== -->
+
+                            <tr class="search-item">
+
+                                <td>
+                                    C005
+                                </td>
+
+                                <td>
+                                    Arjun Kumar
+                                </td>
+
+                                <td>
+                                    Electricity outage
+                                </td>
+
+                                <td>
+                                    Electricity
+                                </td>
+
+                                <td>
+                                    04 Aug 2026
+                                </td>
+
+                                <td>
+                                    Miyapur
+                                </td>
+
+                                <td class="status-active">
+                                    Resolved
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewComplaint(5)"
+                                        title="View">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editComplaint(5)"
+                                        title="Edit">
+
+                                        <i class="fas fa-edit"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteComplaint(5)"
+                                        title="Delete">
+
+                                        <i class="fas fa-trash"></i>
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 PAGINATION
+            ================================== -->
+
+            <div class="pagination">
+
+                <button>
+
+                    <i class="fas fa-angle-left"></i>
+
+                </button>
+
+
+                <button class="active">
+                    1
+                </button>
+
+
+                <button>
+                    2
+                </button>
+
+
+                <button>
+                    3
+                </button>
+
+
+                <button>
+
+                    <i class="fas fa-angle-right"></i>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================
+                 FOOTER
+            ================================== -->
+
+            <footer class="footer">
+
+                <p>
+
+                    © <span id="currentYear"></span>
+
+                    Mera Ilaka.
+
+                    All Rights Reserved.
+
+                </p>
+
+            </footer>
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+         Keep JavaScript at bottom
+    ========================================== -->
+
+    <script src="../Script.js/script.js"></script>
+
+    <script src="../Script.js/Validation.js"></script>
+
+    <script src="../Script.js/Admin.js"></script>
+
+
+
+</body>
+
+</html>

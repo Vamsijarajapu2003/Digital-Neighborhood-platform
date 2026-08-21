@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mera Ilaka | Admin Announcements</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+     <!-- CSS -->
+     <link rel="stylesheet" href="../Style.css/style.css">
+<link rel="stylesheet" href="../Style.css/dashboard.css">
+<link rel="stylesheet" href="../Style.css/forms.css">
+<link rel="stylesheet" href="../Style.css/admin.css">
+<link rel="stylesheet" href="../Style.css/cards.css">
+<link rel="stylesheet" href="../Style.css/tables.css">
+<link rel="stylesheet" href="../Style.css/responsive.css">
+<link rel="stylesheet" href="../Style.css/animations.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+         ADMIN CONTAINER
+    ========================================== -->
+
+    <div class="dashboard-container">
+
+        <!-- =====================================
+             SIDEBAR
+        ====================================== -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <i class="fas fa-city"></i>
+                Mera Ilaka
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="Dashboard.html">
+                        <i class="fas fa-chart-line"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Users.html">
+                        <i class="fas fa-users"></i>
+                        Users
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Residents.html">
+                        <i class="fas fa-user-group"></i>
+                        Residents
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Businesses.html">
+                        <i class="fas fa-store"></i>
+                        Businesses
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Services.html">
+                        <i class="fas fa-handshake"></i>
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Announcements.html" class="active">
+                        <i class="fas fa-bullhorn"></i>
+                        Announcements
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Events.html">
+                        <i class="fas fa-calendar"></i>
+                        Events
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Complaints.html">
+                        <i class="fas fa-file-circle-exclamation"></i>
+                        Complaints
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Marketplace.html">
+                        <i class="fas fa-cart-shopping"></i>
+                        Marketplace
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Reports.html">
+                        <i class="fas fa-chart-pie"></i>
+                        Reports
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Settings.html">
+                        <i class="fas fa-gear"></i>
+                        Settings
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../../Login.html" id="logout">
+                        <i class="fas fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+
+        <!-- =====================================
+             MAIN CONTENT
+        ====================================== -->
+
+        <main class="main-content">
+
+            <!-- Top Bar -->
+
+            <div class="topbar">
+
+                <div>
+                    <h1>
+                        <i class="fas fa-bullhorn"></i>
+                        Announcements
+                    </h1>
+
+                    <p>
+                        Manage community announcements
+                    </p>
+                </div>
+
+                <div class="user-info">
+
+                    <i class="fas fa-user-shield"></i>
+
+                    <div>
+                        <strong>Administrator</strong>
+                        <br>
+                        <small>Admin</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 CREATE ANNOUNCEMENT
+            ================================== -->
+
+            <div class="card">
+
+                <h2>
+                    <i class="fas fa-plus-circle"></i>
+                    Create Announcement
+                </h2>
+
+                <form id="announcementForm">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="announcementTitle">
+                                Announcement Title
+                                <span class="required">*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="announcementTitle"
+                                class="form-control"
+                                placeholder="Enter announcement title"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="announcementCategory">
+                                Category
+                            </label>
+
+                            <select
+                                id="announcementCategory"
+                                class="form-control">
+
+                                <option value="">
+                                    Select Category
+                                </option>
+
+                                <option value="community">
+                                    Community
+                                </option>
+
+                                <option value="maintenance">
+                                    Maintenance
+                                </option>
+
+                                <option value="emergency">
+                                    Emergency
+                                </option>
+
+                                <option value="event">
+                                    Event
+                                </option>
+
+                                <option value="general">
+                                    General
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="announcementMessage">
+                            Announcement Message
+                            <span class="required">*</span>
+                        </label>
+
+                        <textarea
+                            id="announcementMessage"
+                            class="form-control"
+                            placeholder="Write your announcement here..."
+                            rows="5"
+                            required></textarea>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="announcementDate">
+                                Publish Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="announcementDate"
+                                class="form-control">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="announcementPriority">
+                                Priority
+                            </label>
+
+                            <select
+                                id="announcementPriority"
+                                class="form-control">
+
+                                <option value="normal">
+                                    Normal
+                                </option>
+
+                                <option value="important">
+                                    Important
+                                </option>
+
+                                <option value="urgent">
+                                    Urgent
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="form-btn">
+
+                        <i class="fas fa-paper-plane"></i>
+
+                        Publish Announcement
+
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- =================================
+                 SEARCH
+            ================================== -->
+
+            <div class="card">
+
+                <h2>
+                    <i class="fas fa-search"></i>
+                    Search Announcements
+                </h2>
+
+                <input
+                    type="text"
+                    id="searchAnnouncement"
+                    class="search-box"
+                    placeholder="Search announcements...">
+
+            </div>
+
+
+            <!-- =================================
+                 ANNOUNCEMENT TABLE
+            ================================== -->
+
+            <div class="card">
+
+                <h2>
+                    <i class="fas fa-list"></i>
+                    All Announcements
+                </h2>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>ID</th>
+
+                                <th>Title</th>
+
+                                <th>Category</th>
+
+                                <th>Priority</th>
+
+                                <th>Date</th>
+
+                                <th>Status</th>
+
+                                <th>Actions</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="announcementTable">
+
+                            <tr class="search-item">
+
+                                <td>001</td>
+
+                                <td>Water Supply Maintenance</td>
+
+                                <td>Maintenance</td>
+
+                                <td class="status-pending">
+                                    Important
+                                </td>
+
+                                <td>08-Aug-2026</td>
+
+                                <td class="status-active">
+                                    Published
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewAnnouncement(1)">
+
+                                        <i class="fas fa-eye"></i>
+                                        View
+
+                                    </button>
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editAnnouncement(1)">
+
+                                        <i class="fas fa-edit"></i>
+                                        Edit
+
+                                    </button>
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteAnnouncement(1)">
+
+                                        <i class="fas fa-trash"></i>
+                                        Delete
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr class="search-item">
+
+                                <td>002</td>
+
+                                <td>Community Cleanliness Drive</td>
+
+                                <td>Community</td>
+
+                                <td class="status-active">
+                                    Normal
+                                </td>
+
+                                <td>07-Aug-2026</td>
+
+                                <td class="status-active">
+                                    Published
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewAnnouncement(2)">
+
+                                        <i class="fas fa-eye"></i>
+                                        View
+
+                                    </button>
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editAnnouncement(2)">
+
+                                        <i class="fas fa-edit"></i>
+                                        Edit
+
+                                    </button>
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteAnnouncement(2)">
+
+                                        <i class="fas fa-trash"></i>
+                                        Delete
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr class="search-item">
+
+                                <td>003</td>
+
+                                <td>Independence Day Celebration</td>
+
+                                <td>Event</td>
+
+                                <td class="status-active">
+                                    Normal
+                                </td>
+
+                                <td>06-Aug-2026</td>
+
+                                <td class="status-pending">
+                                    Draft
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        class="table-btn view-btn"
+                                        onclick="viewAnnouncement(3)">
+
+                                        <i class="fas fa-eye"></i>
+                                        View
+
+                                    </button>
+
+                                    <button
+                                        class="table-btn edit-btn"
+                                        onclick="editAnnouncement(3)">
+
+                                        <i class="fas fa-edit"></i>
+                                        Edit
+
+                                    </button>
+
+                                    <button
+                                        class="table-btn delete-btn"
+                                        onclick="deleteAnnouncement(3)">
+
+                                        <i class="fas fa-trash"></i>
+                                        Delete
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 FOOTER
+            ================================== -->
+
+            <div class="footer">
+
+                <p>
+                    © <span id="currentYear"></span>
+                    Mera Ilaka. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+ <script src="../Script.js/script.js"></script>
+
+    <script src="../Script.js/Validation.js"></script>
+
+    <script src="../Script.js/Admin.js"></script>
+
+</body>
+
+</html>
